@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flobi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../assets/logo.svg" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <a href="../index.html" class="back"><img src="../assets/arrow-back.svg" alt="back">Back</a>
+
+    <div class="header">
+            <div class="info">
+                <div class="divider"></div>
+                <div class="text">
+                    <h2>Flobi</h2>
+                    <p>Redesign of the registration process of the Flobi mobile application.</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="container">
+        <nav class="menu">
+            <!-- Contenido del menú -->
+            <ul>
+                <li><a href="#why">Why?</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#first_iteration">First iteration</a></li>
+                <li><a href="#second_iteration">Second iteration</a></li>
+                <li><a href="#third_iteration">Third iteration</a></li>
+                <li><a href="#next">Next steps</a></li>
+                <li><a href="#data">Data</a></li>
+                <!-- Más elementos del menú -->
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <!-- Contenido principal que se desplaza -->
+
+            <section id="why" class="problem problem-start">
+                <h2>Why we start this project?</h2>
+                <p>We initiaded this porject due to several issues identified in the application registration process.</p>
+                <div>
+                    <span class="number">27.98%</span>
+                    <div>
+                        <p class="date">Between December 12th, 2022, and Juanary 12th, 2023.</p>
+                        <p>Of new users who attempted to register <span>abandoned the process</span> durin the registration form.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="number">45%</span>
+                    <div>
+                        <p class="date">From July 2022 to January 2023.</p>
+                        <p>Of users abandoned the registration process, <span>only 55%</span> of users who started the registration process <span>made it to the first open.</span></p>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="number">30.6%</span>
+                    <div>
+                        <p class="date">Between September 2022 and January 2023.</p>
+                        <p>Of new users registered had completed their profiles. This is a <span>crucial aspect of the application</span> as it enables the creation of player matches.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="timeline" class="problem timeline">
+                <h2>Project Timeline</h2>
+                <p>Three months. January to April 2023</p>
+                <img src="../assets/timeline-flobi.png" alt="project timeline">
+            </section>
+
+            <section id="team" class="team">
+                <h2>Team members</h2>
+                <p>UX | UI Designer My Rol</p>
+                <p>UI Designer</p>
+                <p>UX Writing</p>
+                <p>Illustrator</p>
+            </section>
+
+            <section id="problem" class="problem">
+                <h2>Problem statement & Challenges</h2>
+                <ul>
+                    <li>Impact the company’s <span>KPI in improving Flobi’s record conversation rate</span>.</li>
+                    <li>Improve the experience during the registration process, <span>create a gamified experience.</span></li>
+                    <li>Identify the personal information required for registration.</li>
+                    <li><span>Implement onboarding to guide</span> the user once the registration is completed.</li>
+                    <li>Identify business and development constraints.</li>
+                    <li>One challenge we faced was the change of team members. </li>
+                </ul>
+            </section>
+
+            <section id="first_iteration" class="problem first_iteration">
+                <h2>First iteration</h2>
+                <ul>
+                    <li>My rol in the first iteration was as a UX designer.</li>
+                    <li>Deliver findings to the UI designer for proposal generation.</li>
+                    <li>For this fist release, we had the following product/tech limitations: <span>Logging in via Google, Apple or social networking services is not contemplated</span> .</li>
+                    <li>A bottleneck was identified in the profile picture, as it is a requiered field, and several users drop out at this point.</li>
+                    <li>As a brand, Flobi seeks to provide a <span>gamified experience</span> to its users from the moment the register.</li>
+                </ul>
+                <img src="../assets/first-iteration-flobi.png" alt="first iteration process">
+            </section>
+
+            
+            <section id="second_iteration" class="problem second_iteration">
+                <h2>Second iteration</h2>
+                <ul>
+                    <li>My rol in the first iteration was as a UX &UI designer.</li>
+                    <li>We have considered that presenting a form as a way of registration <span>we had a 19,18% abandonment rate</span> and one of our goals is to offer a more dynamic process to the user, that is way we explored other options, <span>we conducted research of the competition to see how the implement gamification</span> and accompany the user during registration applications such as Padel Mates, PlayAtomic, Tinder, Reva, Duolinguo, among others.</li>
+                    <li>Together with <a href="https://www.linkedin.com/in/celeste-alvarez-3099111b/" target="_blank">Celeste Álvarez (UX Writing)</a>, we cread a proposal that would accompany the Flobi user during registration, <span>linke a ping-pong of questions</span>.</li>
+                </ul>
+                <p class="subtitle">What do we seek to achieve with this approach?</p>
+                <ul>
+                    <li>Generate a gamified experience from registration.</li>
+                    <li>Align the app with Flobi’s dynamics that Flobi has in ist social networks users.</li>
+                </ul>
+            </section>
+
+            <section class="test problem">
+                <h2>Objective of the test</h2>
+                <p>Evaluate the usabilitu and user acceptance in the registration process of Flobi’s new registration flow, both through a form and ping-pong system of questions, <span>through unmoderated testing on the Maze plataform</span>. The objective is to identify areas of improvement and opportunities to optimize the registration flow and improve the user experience.</p>
+                <img src="../assets/second-iteration-flobi.png" alt="second iteracion images">
+                
+            </section>
+
+            <section id="third_iteration" class="problem third_iteration">
+                <h2>Third iteration</h2>
+                <ul>
+                    <li>In this iteration, we analysed the results of the test that was conduced over a 3-days period by sending emails to participants.</li>
+                    <li>At this stage of the process, <span>we return to the empathising phase to again a deeper understanding of users’ responses</span> and their appreciation of the proposals presented.</li>
+                </ul>
+                <img src="../assets/third_iteration.png" alt="third iteration">
+            </section>
+
+            <section class="problem tell">
+                <div>
+                    <h2>What did users tell us?</h2>
+                    <ul>
+                        <li>“Interestingly, I found the onde with the separate questions<span> more interactive</span>”</li>
+                        <li>“I like the <span>step-by-step</span> flow of the typeform”</li>
+                        <li>“By scrolling through the registration options, it gives the feeling that <span>I won’t get tired or bored filling in the data</span>”</li>
+                        <li>“It is more convenient to see all fields on <span>one screen</span>”</li>
+                        <li>“I prefer to see a template with all the lines to fill in together because then at least I know how many fields I will fill in to complete my registration”</li>
+                        <li>“I find it more common to register as a single sheet of paper. But <span>I don’t dislike the other one</span>”</li>
+                        <li>“Filling in the data step by step is <span>much simpler</span> and does not give you such an overwhelming prospect of data complete”</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="../assets/figjam-flobi.png" alt="post it flobi">
+                </div>                
+            </section>
+
+            <section id="next" class="next_steps problem">
+                <h2>Definition and next steps</h2>
+                <ul>
+                    <li>Advance and make improvements to <span>the ping-pong type question</span> proposal.</li>
+                    <li>We decided to move forward with this proposal, as it meets our goals of providing a <span>gamified experience</span> from registration.</li>
+                    <li>No user has commented on the avatars, so the proposal to <span>allow registration to progress and not to stop users</span> from choosing the image when registrering is maintained.</li>
+                    <li>Some users said they were anxios about not knowing what the registry would ask them next, so <span>we made changes to the steps</span>. </li>
+                    <li>Contrary to our initial assumption that the ping-pong question registration process would take users longer, it actually resulted in the shortest <span>average completion time of 28.7 seconds, compared to 73.7 seconds for the form proposal</span>.</li>
+                </ul>
+                <img src="../assets/next-steps-flobi.png" alt="next-steps">
+            </section>
+
+            <section class="problem">
+                <h2>Hand-Off</h2>
+                <img src="../assets/hand-off-flobi.png" alt="hand-off">
+            </section>
+
+            <section id="data" class="problem data">
+                <h2>How do we collect data to measure the impact of the proposal?</h2>
+                <ul>
+                    <li><span>Objetive:</span> Evaluate if user experience improvemets positively impact retention and decrease registration abandonment.</li>
+                    <li><span>Daily data collection:</span> Track registered users per operating system (Android&iOS) to understand user preferences and proposition adaptability.</li>
+                    <li><span>Registration conversion rate:</span> monitor successful registration completion compared to total initiated, indicating proposal effectiveness in converting potential users.</li>
+                    <li><span>Time comparison:</span> compare data collected between July 2022 and January 2023 to assess registration abandonment reduction.</li>
+                    <li><span>Impact indicators:</span> look for increased daily registered user percentages, especially in low-registration-rate operating systems, and higher registration conversion rates.</li>
+                    <li><span>Informing iterations: </span>use collected data to evaluate proposal success and guide further improvements in user experience.</li>
+                </ul>
+
+            </section>
+
+            <div class="tools problem">
+                <h3>Tools used during this project</h3>
+                <ul>
+                    <li>Notion</li>
+                    <li>FigJam</li>
+                    <li>Figma</li>
+                    <li>Maze</li>
+                    <li>Google Form</li>
+                    <li>Photoshop</li>
+                    <li>Illustartor</li>
+                </ul>
+            </div>
+
+            <section class="thank thank-flobi">
+                <h2>Thank you for making it this far.</h2>
+                <p>I would love to talk about the challenges, decisions and mistakes that were made during this first stage.</p>
+                <p>Feel free to talk to me on LinkedIn or by mail.</p>
+                <span>Abrazo Jo</span>
+            </section>
+           
+        </main>
+        <aside class="side-comments">
+            <!-- Comentarios que se desplazan con el contenido principal -->
+            <div class="comment01 comment">My additional notes will be recorded in this space.</div>
+
+            <div class="comment02 comment">💡 First Open refers to when the user accesses the initial screen of the application, while Accounts Creates refers to when the user accesses the Home Screen.</div>
+
+            <div class="comment03 comment">It should be noted that while the idea is to show the stages, they were not linear. </div>
+
+            <div  class="comment04 comment">In addition, during the process we incorporated in meetings the team of developers who would carry out the redesign. </div>
+
+            <div  class="comment05 comment">For more information about the visual process of he first iteration: <a href="https://www.behance.net/gallery/169785005/Rediseno-Login-y-Perfil-deportivo-App-flobi?tracking_source=search_projects&l=0" target="_blank">Case Study - Redesign, Login and Sports profile of Ricardo Martinez (UI Designer).</a> </div>
+
+            <div  class="comment06 comment">It was incredible to achieve a participation of 143 users. This was helpful as the Stakeholders were concerned about the step-by-step approach, as they felt it might be too long for the user. </div>
+
+            <div  class="comment07 comment">One of our hypotheses was that users found the step-by-step process lengthy and boring, but most users commented that they were surprised at how enjoyable they found the process. </div>
+
+            <div  class="comment08 comment">One of the pain points was that users did not complete their profiles, making it difficult to match players with each other.</div>
+
+            <div  class="comment09 comment"> In the Onboarding proposal, the user is made to complete the profile while maintaining the concept of a gamified experience. 😎</div>
+
+
+
+            <!-- Más comentarios -->
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <div class="copy">© Jo Galeano 2024</div>
+        <div class="rrss">
+            <a href="https://www.linkedin.com/in/galeano19maria/" target="_blank"><img src="../assets/devicon_linkedin.png" alt="LinkedIn"></a>
+            <a href="mailto: galeano.product@gmail.com"><img src="../assets/logos_google-gmail.png" alt="Gmail"></a>
+            <a href="https://www.instagram.com/jo.galeano/" target="_blank"><img src="../assets/icons_instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
