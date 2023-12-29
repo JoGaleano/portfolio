@@ -61,10 +61,7 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        transition: background-image 0.3s ease-in-out;
-        &:hover{
-            background-image: url("../../assets/photo_dos.jpeg");
-        }
+
     }
     .text{
         width: 23rem;
@@ -271,6 +268,13 @@
     
         }
     
+    }
+
+    .profile_photo{
+        transition: background-image 0.3s ease-in-out;
+        &:hover{
+            background-image: url("../../assets/photo_dos.jpeg");
+        }
     }
 
     #case_study{

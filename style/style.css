@@ -229,7 +229,7 @@ body {
     background: #865297;
   }
   .header-about .info .text {
-    width: 25rem;
+    width: 18rem;
     margin-left: 12px;
     align-self: center;
   }
@@ -1284,10 +1284,6 @@ main {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: background-image 0.3s ease-in-out;
-}
-#presentation .profile_photo:hover {
-  background-image: url("../../assets/photo_dos.jpeg");
 }
 #presentation .text {
   width: 23rem;
@@ -1472,6 +1468,12 @@ main {
   }
   #presentation #arrow2 .label {
     width: 12rem;
+  }
+  .profile_photo {
+    transition: background-image 0.3s ease-in-out;
+  }
+  .profile_photo:hover {
+    background-image: url("../../assets/photo_dos.jpeg");
   }
   #case_study {
     position: relative;
@@ -1759,7 +1761,7 @@ main {
     border-top: 1px solid #F3D7FC;
     border-bottom: 1px solid #F3D7FC;
     padding: 40px 0px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     margin-bottom: 0px;
   }
   #case_study .formato .info {
@@ -1773,13 +1775,13 @@ main {
     background: #865297;
   }
   #case_study .formato .info .text {
-    width: 20rem;
+    width: 18rem;
     margin-left: 12px;
     align-self: center;
   }
   #case_study .formato .info .text h2 {
     font-family: Advent Pro;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -2428,7 +2430,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .proposed_solution {
@@ -2445,7 +2447,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .team {
@@ -2462,7 +2464,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .Challenges_overcome {
@@ -2479,7 +2481,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .Challenges_overcome ul ol {
@@ -2488,7 +2490,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     padding-bottom: 1rem;
   }
@@ -2514,7 +2516,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .Process p span {
@@ -2535,7 +2537,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     padding-bottom: 1rem;
   }
@@ -2568,7 +2570,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     padding-bottom: 1rem;
   }
@@ -2581,7 +2583,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     padding-bottom: 1rem;
   }
@@ -2594,7 +2596,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
     padding-bottom: 1rem;
   }
@@ -2612,7 +2614,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .thank {
@@ -2632,7 +2634,7 @@ main {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
   }
   .container .main-content .thank span {
