@@ -1,0 +1,44 @@
+@import "../base/color";
+@import "../base/typography";
+
+#footer{
+    background-color: $color-bg-blur;
+    backdrop-filter: blur(1px);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    align-items: center;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
+    .rrss{
+        a{
+            margin-left: 20px;
+            img{
+                width: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    #footer{
+        background-color: $color-bg-blur;
+        backdrop-filter: blur(1px);
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 80px;
+        align-items: center;
+        box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
+        .rrss{
+            margin-top: 20px;
+            a{
+                margin-left: 20px;
+                img{
+                    width: 32px;
+                }
+            }
+        }
+    }
+}

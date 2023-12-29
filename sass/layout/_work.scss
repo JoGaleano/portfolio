@@ -1,0 +1,679 @@
+@import "../base/color";
+@import "../base/typography";
+
+#p5-canvas {
+    position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Coloca el canvas detrás del contenido */
+    opacity: 0.8;
+}
+
+
+#nav{
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(243, 215, 252, 0.08) !important;
+    box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+    backdrop-filter: blur(1px);
+    z-index: 10;
+
+    .navbar-brand{
+        width: 8%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .active{
+        text-decoration: underline;
+        color: $primary-p7;
+        font-weight: 600;
+    }
+
+    .nav-link{
+        color: $primary-p9;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        &:hover{
+            text-decoration: line-through;
+            color: $primary-p5;
+        }
+    }
+
+}
+
+#presentation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-xxl, 3rem);
+    width: auto;
+    height: 25rem;
+    margin-top: 20vh;
+    .profile_photo{
+        width: 25rem;
+        height: 25rem;
+        border-radius: 12.5rem 0rem;
+        background-image: url("../../assets/profile.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: background-image 0.3s ease-in-out;
+        &:hover{
+            background-image: url("../../assets/photo_dos.jpeg");
+        }
+    }
+    .text{
+        width: 23rem;
+        height: auto;
+        h1{
+            font-family: Advent Pro, Arial, Helvetica, sans-serif;
+            font-size: 4rem;
+            font-weight: 600;
+            color: var($color-grayscale-grey-dark);
+        }
+        p{
+            font-family: Roboto;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: var($color-grayscale-grey-dark);
+        }
+    }
+    .arrow-box{
+        position: absolute;
+    }
+
+    #arrow1 {
+        top: -7vh; /* Ajustar según la posición deseada */
+        right: 20vw; /* Ajustar según la posición deseada */
+        .label{
+            width: 25rem;
+        }
+    }
+
+    #arrow2 {
+        bottom: 20vh; /* Ajustar según la posición deseada */
+        left: 0vw; /* Ajustar según la posición deseada */
+        .label{
+            width: 12rem;
+        }
+
+    }
+
+    #arrow3 {
+        bottom: -10vh; /* Ajustar según la posición deseada */
+        left: 30vw; /* Ajustar según la posición deseada */
+        .label{
+            width: 8rem;
+        }
+    }
+
+}
+
+#case_study{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0px;
+    .formato{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        gap: 18rem;
+        margin: 80px 0px;
+        border-top: 1px solid $primary-p2;
+        border-bottom: 1px solid $primary-p2;
+        padding: 40px 0px;
+        margin-bottom: 0px;
+        .info{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 16.375rem;
+            .divider{
+                flex-basis: 2%;
+                width: 0.5rem;
+                height: 16.375rem;
+                background: $primary-p7;
+            } 
+
+            .text{
+                width: 24rem;
+                margin-left: 12px;
+                align-self: center;
+                h2{
+                    font-family: Advent Pro;
+                    font-size: 3rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: $primary-p9;
+                }
+                p{
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+                a{
+                    color:$primary-p9;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    &:hover{
+                        text-decoration: line-through;
+                        color: $primary-p5;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+
+        .portada{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 100%;
+            border:3px solid rgba(134, 82, 151, 0.00);
+            background: $color-white;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+            img{
+                width: 10rem;
+                height: 10rem;
+                display: inline-block;
+            }
+            &:hover{
+                transform: scale(0.8);
+            }
+        }
+
+
+    }
+
+}
+
+#worked{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    h2{
+        color: $color-grayscale-grey-dark;
+        font-family: Advent Pro;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        justify-self: flex-start;
+    }
+    .row{
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(124, 124, 124, 0.20);
+            background: $color-white;
+            width: 20rem;
+            height: 8rem;
+            margin-left: 8px;
+            margin-bottom: 8px;
+            img{
+                width: 10rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:1440px){
+    #presentation{
+        .text{
+            width: 23rem;
+            height: auto;
+        }
+        .arrow-box{
+            position: absolute;
+        }
+    
+        #arrow1 {
+            top: -7vh; 
+            right: 30vw; 
+            .label{
+                width: 25rem;
+            }
+        }
+    
+        #arrow2 {
+            bottom: 15vh; 
+            left: 10vw; 
+            .label{
+                width: 12rem;
+            }
+    
+        }
+    
+    }
+
+    #case_study{
+        position: relative;
+        display: flex;
+        margin-left: 15vw;
+        margin-top: 80px;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1294px){
+    #p5-canvas {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        z-index: -1; /* Coloca el canvas detrás del contenido */
+        overflow: hidden;
+    }
+
+    #nav{
+        position: fixed;
+        width: 100vw ;
+        background-color: rgba(243, 215, 252, 0.08) !important;
+        box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+        backdrop-filter: blur(1px);
+        z-index: 10;
+    
+    }
+    #presentation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: var(--Spacing-xxl, 3rem);
+        width: auto;
+        height: 40rem;
+        margin-top: 20vh;
+        .profile_photo{
+            width: 25rem;
+            height: 25rem;
+            border-radius: 12.5rem 0rem;
+            background-image: url("../../assets/profile.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 0.3s ease-in-out;
+            &:hover{
+                background-image: url("../../assets/photo_dos.jpeg");
+            }
+        }
+        .text{
+            width: 23rem;
+            height: auto;
+            h1{
+                font-family: Advent Pro, Arial, Helvetica, sans-serif;
+                font-size: 4rem;
+                font-weight: 600;
+                color: var($color-grayscale-grey-dark);
+            }
+            p{
+                font-family: Roboto;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: var($color-grayscale-grey-dark);
+            }
+        }
+        .arrow-box{
+            position: absolute;
+        }
+    
+        #arrow1 {
+            top: -8vh; /* Ajustar según la posición deseada */
+            right: -5vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 25rem;
+            }
+        }
+    
+        #arrow2 {
+            bottom: 50vh; /* Ajustar según la posición deseada */
+            left: 0vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 12rem;
+            }
+    
+        }
+    
+        #arrow3 {
+            bottom: 30vh; /* Ajustar según la posición deseada */
+            left: 50vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 8rem;
+            }
+        }
+    
+    }
+    
+    #case_study{
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 0px;
+        .formato{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            gap: 18rem;
+            margin: 80px 0px;
+            border-top: 1px solid $primary-p2;
+            border-bottom: 1px solid $primary-p2;
+            padding: 40px 0px;
+            .info{
+                display: flex;
+                flex-wrap: nowrap;
+                .divider{
+                    flex-basis: 2%;
+                    width: 0.5rem;
+                    height: 16.375rem;
+                    background: $primary-p7;
+                } 
+    
+                .text{
+                    width: 24rem;
+                    margin-left: 12px;
+                    align-self: center;
+                    h2{
+                        font-family: Advent Pro;
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        color: $primary-p9;
+                    }
+                    p{
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                    a{
+                        color:$primary-p9;
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+    
+            }
+    
+            .portada{
+                display: none;
+            }
+    
+    
+        }
+        
+    }
+    
+    #worked{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        h2{
+            color: $color-grayscale-grey-dark;
+            font-family: Advent Pro;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            justify-self: flex-start;
+        }
+        .row{
+            flex-direction: column;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(124, 124, 124, 0.20);
+                background: $color-white;
+                width: 15rem;
+                height: 8rem;
+                margin-left: 8px;
+                margin-bottom: 8px;
+                img{
+                    width: 10rem;
+                    height: auto;
+                }
+            }
+            .row1 .row2{
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    #p5-canvas {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: auto;
+        z-index: -1; /* Coloca el canvas detrás del contenido */
+        overflow: hidden;
+    }
+
+    #nav{
+        position: fixed;
+        width: 100vw ;
+        background-color: rgba(243, 215, 252, 0.08) !important;
+        box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+        backdrop-filter: blur(1px);
+        z-index: 10;
+    
+    }
+    #presentation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: var(--Spacing-xxl, 3rem);
+        width: auto;
+        height: 40rem;
+        margin-top: 20vh;
+        .profile_photo{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 12.5rem 0rem;
+            background-image: url("../../assets/profile.jpg");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background-image 0.3s ease-in-out;
+        }
+        .text{
+            width: 20rem;
+            height: auto;
+            padding-top: 40px;
+
+            h1{
+                font-family: Advent Pro, Arial, Helvetica, sans-serif;
+                font-size: 4rem;
+                font-weight: 600;
+                color: var($color-grayscale-grey-dark);
+            }
+            p{
+                font-family: Roboto;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                color: var($color-grayscale-grey-dark);
+            }
+        }
+        .arrow-box{
+            position: absolute;
+        }
+    
+        #arrow1 {
+            top: -4vh; /* Ajustar según la posición deseada */
+            right: -5vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 18rem;
+            }
+        }
+    
+        #arrow2 {
+            bottom: 38vh; /* Ajustar según la posición deseada */
+            left: 0vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 10rem;
+            }
+    
+        }
+    
+        #arrow3 {
+            bottom: 35vh; /* Ajustar según la posición deseada */
+            left: 50vw; /* Ajustar según la posición deseada */
+            .label{
+                width: 8rem;
+            }
+        }
+    
+    }
+    
+    #case_study{
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 0px;
+        .formato{
+            display: flex;
+            align-items: center;
+            align-content: center;
+            gap: 18rem;
+            margin: 80px 0px;
+            border-top: 1px solid $primary-p2;
+            border-bottom: 1px solid $primary-p2;
+            padding: 40px 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            .info{
+                display: flex;
+                flex-wrap: nowrap;
+                .divider{
+                    flex-basis: 2%;
+                    width: 0.5rem;
+                    height: 16.375rem;
+                    background: $primary-p7;
+                } 
+    
+                .text{
+                    width: 20rem;
+                    margin-left: 12px;
+                    align-self: center;
+                    h2{
+                        font-family: Advent Pro;
+                        font-size: 3rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        color: $primary-p9;
+                    }
+                    p{
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                    }
+                    a{
+                        color:$primary-p9;
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+    
+            }
+    
+            .portada{
+                display: none;
+            }
+    
+    
+        }
+    }
+    
+    #worked{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+        margin-top: 80px;
+        h2{
+            color: $color-grayscale-grey-dark;
+            font-family: Advent Pro;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            justify-self: flex-start;
+        }
+        .row{
+            flex-direction: column;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0.5rem;
+                border: 1px solid rgba(124, 124, 124, 0.20);
+                background: $color-white;
+                width: 15rem;
+                height: 8rem;
+                margin-left: 8px;
+                margin-bottom: 8px;
+                img{
+                    width: 10rem;
+                    height: auto;
+                }
+            }
+            .row1 .row2{
+                flex-basis: 50%;
+            }
+        }
+    }   
+}
