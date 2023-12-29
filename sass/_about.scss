@@ -1,0 +1,230 @@
+@import "../base/reset";
+@import "../base/color";
+@import "../base/typography";
+
+body{
+    overflow-x: hidden;
+}
+
+#p5-canvas {
+    position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Coloca el canvas detrás del contenido */
+    
+}
+
+.about-fondo{
+    opacity: 0.5 !important;
+}
+
+.header-about{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18rem;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+    .info{
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-self: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        .divider{
+            flex-basis: 1.5%;
+            width: 0.5rem;
+            height: 16.375rem;
+            background: $primary-p7;
+        } 
+
+        .text{
+            width: 40rem;
+            margin-left: 12px;
+            align-self: center;
+            h2{
+                font-family: Advent Pro;
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                color: $primary-p9;
+            }
+        }
+    }
+}
+
+.main-about{
+    div{
+        margin-top: 60px;
+        h2{
+            font-family: Advent Pro;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        p{
+            font-family: Roboto;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+        span{
+            color: $primary-p9;
+            font-weight: 600;
+            
+        }
+    }
+
+    .moodboard{
+        display: flex;
+        flex-direction: column;
+        .img{
+            align-self: center;
+            background-image: url(../../assets/moodboard-desktop.png);
+            height: 755px;
+            width: 1061px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .thank{
+        border-top: 1px solid $primary-p7;
+        padding-top: 36px;
+        .jo{
+                color: $primary-p9;
+                font-family: Indie Flower;
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-left: 80%;
+        }
+    }
+}
+
+@media (min-width:1441px){
+    main{
+
+        .thank{
+            border-top: 1px solid $primary-p7;
+            padding-top: 36px;
+            .jo{
+                    color: $primary-p9;
+                    font-family: Indie Flower;
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-left: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width:767px){
+    #p5-canvas {
+        display: none;
+    }
+    .header-about{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18rem;
+        padding: 40px 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        margin-top: 70px;
+        .info{
+            margin-left: 10%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-self: center;
+            justify-content: center;
+            padding-bottom: 20px;
+            .divider{
+                flex-basis: 1.5%;
+                width: 0.5rem;
+                height: 16.375rem;
+                background: $primary-p7;
+            } 
+    
+            .text{
+                width: 25rem;
+                margin-left: 12px;
+                align-self: center;
+                h2{
+                    font-family: Advent Pro;
+                    font-size: 2.5rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    color: $primary-p9;
+                }
+            }
+        }
+    }
+    .main-about{
+        div{
+            margin-top: 60px;
+            h2{
+                font-family: Advent Pro;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            p{
+                font-family: Roboto;
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+            span{
+                color: $primary-p9;
+                font-weight: 600;
+                
+            }
+        }
+    
+        .moodboard{
+            display: flex;
+            flex-direction: column;
+            .img{
+                align-self: center;
+                background-image: url(../../assets/moodboard-mobile.png);
+                height: 827px;
+                width: 280px;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    
+        .thank{
+            border-top: 1px solid $primary-p7;
+            padding-top: 36px;
+            .jo{
+                    color: $primary-p9;
+                    font-family: Indie Flower;
+                    font-size: 1.8rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-left: 60%;
+            }
+        }
+    }
+}
