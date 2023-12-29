@@ -1469,17 +1469,19 @@ main {
   #presentation #arrow2 .label {
     width: 12rem;
   }
-  .profile_photo {
-    transition: background-image 0.3s ease-in-out;
-  }
-  .profile_photo:hover {
-    background-image: url("../../assets/photo_dos.jpeg");
-  }
   #case_study {
     position: relative;
     display: flex;
     margin-left: 15vw;
     margin-top: 80px;
+  }
+}
+@media (min-width: 100px) {
+  #presentation .profile_photo {
+    transition: background-image 0.3s ease-in-out;
+  }
+  #presentation .profile_photo:hover {
+    background-image: url("../../assets/photo_dos.jpeg");
   }
 }
 @media (min-width: 768px) and (max-width: 1294px) {
