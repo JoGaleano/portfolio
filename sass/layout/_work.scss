@@ -586,7 +586,7 @@
             border-top: 1px solid $primary-p2;
             border-bottom: 1px solid $primary-p2;
             padding: 40px 0px;
-            padding-bottom: 0px;
+            padding-bottom: 20px;
             margin-bottom: 0px;
             .info{
                 display: flex;
@@ -599,12 +599,12 @@
                 } 
     
                 .text{
-                    width: 20rem;
+                    width: 18rem;
                     margin-left: 12px;
                     align-self: center;
                     h2{
                         font-family: Advent Pro;
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
