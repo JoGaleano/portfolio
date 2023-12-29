@@ -1,0 +1,2653 @@
+@charset "UTF-8";
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+body {
+  overflow-x: hidden;
+}
+
+#p5-canvas {
+  position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Coloca el canvas detrás del contenido */
+}
+
+.about-fondo {
+  opacity: 0.5 !important;
+}
+
+.header-about {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18rem;
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+.header-about .info {
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.header-about .info .divider {
+  flex-basis: 1.5%;
+  width: 0.5rem;
+  height: 16.375rem;
+  background: #865297;
+}
+.header-about .info .text {
+  width: 40rem;
+  margin-left: 12px;
+  align-self: center;
+}
+.header-about .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+
+.main-about div {
+  margin-top: 60px;
+}
+.main-about div h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.main-about div p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.main-about div span {
+  color: #512D5D;
+  font-weight: 600;
+}
+.main-about .moodboard {
+  display: flex;
+  flex-direction: column;
+}
+.main-about .moodboard .img {
+  align-self: center;
+  background-image: url(../../assets/moodboard-desktop.png);
+  height: 755px;
+  width: 1061px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-about .thank {
+  border-top: 1px solid #865297;
+  padding-top: 36px;
+}
+.main-about .thank .jo {
+  color: #512D5D;
+  font-family: Indie Flower;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 80%;
+}
+
+@media (min-width: 1441px) {
+  main .thank {
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+  }
+  main .thank .jo {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #p5-canvas {
+    display: none;
+  }
+  .header-about {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18rem;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+  }
+  .header-about .info {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .header-about .info .divider {
+    flex-basis: 1.5%;
+    width: 0.5rem;
+    height: 16.375rem;
+    background: #865297;
+  }
+  .header-about .info .text {
+    width: 25rem;
+    margin-left: 12px;
+    align-self: center;
+  }
+  .header-about .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .main-about div {
+    margin-top: 60px;
+  }
+  .main-about div h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .main-about div p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .main-about div span {
+    color: #512D5D;
+    font-weight: 600;
+  }
+  .main-about .moodboard {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-about .moodboard .img {
+    align-self: center;
+    background-image: url(../../assets/moodboard-mobile.png);
+    height: 827px;
+    width: 280px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .main-about .thank {
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+  }
+  .main-about .thank .jo {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 60%;
+  }
+}
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+#footer {
+  background-color: rgba(243, 215, 252, 0.08);
+  backdrop-filter: blur(1px);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  align-items: center;
+  box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+#footer .rrss a {
+  margin-left: 20px;
+}
+#footer .rrss a img {
+  width: 32px;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    background-color: rgba(243, 215, 252, 0.08);
+    backdrop-filter: blur(1px);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 80px;
+    align-items: center;
+    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
+  }
+  #footer .rrss {
+    margin-top: 20px;
+  }
+  #footer .rrss a {
+    margin-left: 20px;
+  }
+  #footer .rrss a img {
+    width: 32px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+body {
+  overflow-x: hidden;
+}
+
+#p5-canvas {
+  position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Coloca el canvas detrás del contenido */
+}
+
+.fondo-resume {
+  opacity: 0.3 !important;
+}
+
+.header-resume {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18rem;
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+.header-resume .info {
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.header-resume .info .divider {
+  flex-basis: 1.3%;
+  width: 0.5rem;
+  height: 12rem;
+  background: #865297;
+}
+.header-resume .info .text {
+  width: 40rem;
+  margin-left: 12px;
+  align-self: center;
+}
+.header-resume .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+.header-resume .info .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.download {
+  margin-top: 120px;
+  display: flex;
+  justify-content: end;
+  padding-right: 80px;
+}
+.download a {
+  text-decoration: none;
+  color: #CF3470;
+}
+.download a:hover {
+  color: #A6194F;
+  text-decoration: line-through;
+}
+
+main section h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+main section h3 {
+  font-family: Advent Pro;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 40px;
+}
+main section h4 {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 40px;
+}
+main section .date {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #504646;
+  font-style: italic;
+}
+main section p span {
+  font-size: 1.25rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #865297;
+}
+main section ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+main section ul li {
+  list-style-type: disc;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+main section ul li span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #865297;
+}
+main .about {
+  margin-top: 60px;
+}
+main .experience {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #D996EE;
+}
+main .experience h3 {
+  margin-bottom: 20px;
+}
+main .education {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #D996EE;
+}
+main .education h3 {
+  margin-bottom: 20px;
+}
+main .skill {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #D996EE;
+  padding-bottom: 80px;
+}
+main .skill h3 {
+  margin-bottom: 20px;
+}
+main .skill .row {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+main .skill .row img {
+  width: 8rem;
+}
+main .skill .learning {
+  margin: 60px 0px;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+main .extra {
+  display: flex;
+  border-top: 1px solid #D996EE;
+  padding-top: 80px;
+}
+main .extra .certification {
+  width: 50%;
+  padding: 32px 24px;
+}
+main .extra .certification div h3 {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+main .extra .certification div p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #512D5D;
+}
+main .extra .book {
+  width: 50%;
+  padding: 32px 24px;
+}
+main .extra .book div h3 {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+main .extra .book div p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #512D5D;
+}
+
+@media (min-width: 1440px) {
+  .skill .row {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .skill .row img {
+    width: 8rem;
+  }
+  .skill .row img:hover {
+    fill: #504646;
+    transform: scale(2);
+    border-radius: 0.25rem;
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
+    backdrop-filter: blur(2px);
+  }
+}
+@media (max-width: 767px) {
+  .header-resume .info .text {
+    width: 18rem;
+    margin-left: 12px;
+    align-self: center;
+  }
+  .header-resume .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .header-resume .info .text p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .skill {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #D996EE;
+    padding-bottom: 80px;
+  }
+  .skill h3 {
+    margin-bottom: 20px;
+  }
+  .skill .row {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .skill .row img {
+    width: 8rem;
+  }
+  .skill .learning {
+    margin: 60px 0px;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .extra {
+    display: flex;
+    border-top: 1px solid #D996EE;
+    padding-top: 80px;
+  }
+  .extra .certification {
+    width: 50%;
+    padding: 32px 24px;
+  }
+  .extra .certification div h3 {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .extra .certification div p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .extra .book {
+    width: 50%;
+    padding: 32px 24px;
+  }
+  .extra .book div h3 {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .extra .book div p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #512D5D;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+.back {
+  position: sticky;
+  top: 120px;
+  margin-top: 120px;
+  margin-left: 38px;
+  color: #512D5D;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.back img {
+  margin-right: 8px;
+}
+.back:hover {
+  text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+  border-bottom: 1px solid #F3D7FC;
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.header .info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.header .info .divider {
+  flex-basis: 2%;
+  width: 0.5rem;
+  height: 16.375rem;
+  background: #865297;
+}
+.header .info .text {
+  width: 24rem;
+  margin-left: 12px;
+  align-self: center;
+}
+.header .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+.header .info .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.main-content .problem-start p {
+  margin-bottom: 24px;
+}
+.main-content .problem-start div {
+  display: flex;
+  margin-bottom: 40px;
+}
+.main-content .problem-start div .number {
+  font-family: Advent Pro;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 30%;
+  text-align: end;
+  padding-right: 40px;
+}
+.main-content .problem-start div div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content .problem-start div div .date {
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #373737;
+  margin-bottom: 8px;
+}
+.main-content .problem-start div div span {
+  text-decoration-line: underline;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.main-content .timeline {
+  border-top: 1px solid #D996EE;
+  padding-top: 20px;
+}
+.main-content .timeline img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.main-content .problem {
+  border-top: 1px solid #D996EE;
+  padding-top: 20px;
+}
+.main-content .problem ul li {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+.main-content .problem ul li a {
+  color: #6B3F7A;
+  text-decoration: none;
+}
+.main-content .problem ul li a:hover {
+  text-decoration: line-through;
+  color: #BD7ED1;
+  font-family: 600;
+}
+.main-content .problem img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.main-content .team {
+  border-top: 1px solid #D996EE;
+  padding-top: 20px;
+}
+.main-content .test_iteration {
+  border-top: 1px solid #D996EE;
+  padding-top: 20px;
+}
+.main-content .test_iteration img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.main-content .tell {
+  display: flex;
+}
+.main-content .tell ul li {
+  margin: 0px;
+  list-style-type: none;
+  font-style: italic;
+}
+.main-content .second_iteration .subtitle {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #512D5D;
+}
+.main-content span {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.side-comments {
+  flex-basis: 300px; /* Ancho de la columna de comentarios */
+  font-family: Indie Flower;
+  color: #512D5D;
+  padding-left: 20px;
+}
+.side-comments .comment01 {
+  margin-top: 80px;
+}
+.side-comments .comment02 {
+  margin-top: 120px;
+}
+.side-comments .comment03 {
+  margin-top: 500px;
+}
+.side-comments .comment04 {
+  margin-top: 200px;
+}
+.side-comments .comment05 {
+  margin-top: 800px;
+}
+.side-comments .comment05 a {
+  color: #865297;
+}
+.side-comments .comment06 {
+  margin-top: 2500px;
+}
+.side-comments .comment07 {
+  margin-top: 400px;
+}
+.side-comments .comment08 {
+  margin-top: 1000px;
+}
+.side-comments .comment08 span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.side-comments .comment09 {
+  margin-top: 20px;
+}
+.side-comments .comment09 span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width: 767px) {
+  .back {
+    display: none;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+    border-bottom: 1px solid #F3D7FC;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+  }
+  .header .info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  .header .info .divider {
+    flex-basis: 2%;
+    width: 1rem;
+    height: 16.375rem;
+    background: #865297;
+  }
+  .header .info .text {
+    width: 8rem;
+    margin-left: 12px;
+    align-self: center;
+  }
+  .header .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .header .info .text p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .menu {
+    display: none;
+  }
+  .container .main-content .problem-start p {
+    margin-bottom: 24px;
+  }
+  .container .main-content .problem-start div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .container .main-content .problem-start div .number {
+    font-family: Advent Pro;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 100%;
+    text-align: start;
+    padding-right: 40px;
+  }
+  .container .main-content .problem-start div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .container .main-content .problem-start div div .date {
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #373737;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    text-align: start;
+  }
+  .container .main-content .problem-start div div span {
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .container .main-content .tell {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main-content .tell ul li {
+    margin: 0px;
+    list-style-type: none;
+    font-style: italic;
+  }
+  .container .main-content .second_iteration .subtitle {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .container .main-content span {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .container .main-content .thank-flobi {
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank-flobi h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank-flobi p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank-flobi span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 1.5rem !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+  }
+  .container .side-comments {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1294px) {
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .main-content .problem-start p {
+    margin-bottom: 24px;
+  }
+  .container .main-content .problem-start div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .container .main-content .problem-start div .number {
+    font-family: Advent Pro;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 50%;
+    text-align: end;
+    padding-right: 40px;
+  }
+  .container .main-content .problem-start div div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .container .main-content .problem-start div div .date {
+    font-family: Roboto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #373737;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    text-align: start;
+  }
+  .container .main-content .problem-start div div span {
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .container .main-content .tell {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .main-content .tell ul li {
+    margin: 0px;
+    list-style-type: none;
+    font-style: italic;
+  }
+  .container .main-content .second_iteration .subtitle {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .container .main-content span {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .container .main-content .thank-flobi {
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank-flobi h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank-flobi p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank-flobi span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 1.5rem !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+  }
+}
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+#p5-canvas {
+  position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Coloca el canvas detrás del contenido */
+  opacity: 0.8;
+}
+
+#nav {
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(243, 215, 252, 0.08) !important;
+  box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+  backdrop-filter: blur(1px);
+  z-index: 10;
+}
+#nav .navbar-brand {
+  width: 8%;
+}
+#nav .navbar-brand img {
+  width: 100%;
+}
+#nav .active {
+  text-decoration: underline;
+  color: #865297;
+  font-weight: 600;
+}
+#nav .nav-link {
+  color: #512D5D;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#nav .nav-link:hover {
+  text-decoration: line-through;
+  color: #BD7ED1;
+}
+
+#presentation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-xxl, 3rem);
+  width: auto;
+  height: 25rem;
+  margin-top: 20vh;
+}
+#presentation .profile_photo {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 12.5rem 0rem;
+  background-image: url("../../assets/profile.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease-in-out;
+}
+#presentation .profile_photo:hover {
+  background-image: url("../../assets/photo_dos.jpeg");
+}
+#presentation .text {
+  width: 23rem;
+  height: auto;
+}
+#presentation .text h1 {
+  font-family: Advent Pro, Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(#232323);
+}
+#presentation .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(#232323);
+}
+#presentation .arrow-box {
+  position: absolute;
+}
+#presentation #arrow1 {
+  top: -7vh; /* Ajustar según la posición deseada */
+  right: 20vw; /* Ajustar según la posición deseada */
+}
+#presentation #arrow1 .label {
+  width: 25rem;
+}
+#presentation #arrow2 {
+  bottom: 20vh; /* Ajustar según la posición deseada */
+  left: 0vw; /* Ajustar según la posición deseada */
+}
+#presentation #arrow2 .label {
+  width: 12rem;
+}
+#presentation #arrow3 {
+  bottom: -10vh; /* Ajustar según la posición deseada */
+  left: 30vw; /* Ajustar según la posición deseada */
+}
+#presentation #arrow3 .label {
+  width: 8rem;
+}
+
+#case_study {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 0px;
+}
+#case_study .formato {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 18rem;
+  margin: 80px 0px;
+  border-top: 1px solid #F3D7FC;
+  border-bottom: 1px solid #F3D7FC;
+  padding: 40px 0px;
+  margin-bottom: 0px;
+}
+#case_study .formato .info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 16.375rem;
+}
+#case_study .formato .info .divider {
+  flex-basis: 2%;
+  width: 0.5rem;
+  height: 16.375rem;
+  background: #865297;
+}
+#case_study .formato .info .text {
+  width: 24rem;
+  margin-left: 12px;
+  align-self: center;
+}
+#case_study .formato .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+#case_study .formato .info .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+#case_study .formato .info .text a {
+  color: #512D5D;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+#case_study .formato .info .text a:hover {
+  text-decoration: line-through;
+  color: #BD7ED1;
+  font-family: 600;
+}
+#case_study .formato .portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  border: 3px solid rgba(134, 82, 151, 0);
+  background: #fcfcfc;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+#case_study .formato .portada img {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+}
+#case_study .formato .portada:hover {
+  transform: scale(0.8);
+}
+
+#worked {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+#worked h2 {
+  color: #232323;
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  justify-self: flex-start;
+}
+#worked .row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(124, 124, 124, 0.2);
+  background: #fcfcfc;
+  width: 20rem;
+  height: 8rem;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+#worked .row div img {
+  width: 10rem;
+  height: auto;
+}
+
+@media (min-width: 1440px) {
+  #presentation .text {
+    width: 23rem;
+    height: auto;
+  }
+  #presentation .arrow-box {
+    position: absolute;
+  }
+  #presentation #arrow1 {
+    top: -7vh;
+    right: 30vw;
+  }
+  #presentation #arrow1 .label {
+    width: 25rem;
+  }
+  #presentation #arrow2 {
+    bottom: 15vh;
+    left: 10vw;
+  }
+  #presentation #arrow2 .label {
+    width: 12rem;
+  }
+  #case_study {
+    position: relative;
+    display: flex;
+    margin-left: 15vw;
+    margin-top: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1294px) {
+  #p5-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1; /* Coloca el canvas detrás del contenido */
+    overflow: hidden;
+  }
+  #nav {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(243, 215, 252, 0.08) !important;
+    box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+    backdrop-filter: blur(1px);
+    z-index: 10;
+  }
+  #presentation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--Spacing-xxl, 3rem);
+    width: auto;
+    height: 40rem;
+    margin-top: 20vh;
+  }
+  #presentation .profile_photo {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 12.5rem 0rem;
+    background-image: url("../../assets/profile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease-in-out;
+  }
+  #presentation .profile_photo:hover {
+    background-image: url("../../assets/photo_dos.jpeg");
+  }
+  #presentation .text {
+    width: 23rem;
+    height: auto;
+  }
+  #presentation .text h1 {
+    font-family: Advent Pro, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(#232323);
+  }
+  #presentation .text p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(#232323);
+  }
+  #presentation .arrow-box {
+    position: absolute;
+  }
+  #presentation #arrow1 {
+    top: -8vh; /* Ajustar según la posición deseada */
+    right: -5vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow1 .label {
+    width: 25rem;
+  }
+  #presentation #arrow2 {
+    bottom: 50vh; /* Ajustar según la posición deseada */
+    left: 0vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow2 .label {
+    width: 12rem;
+  }
+  #presentation #arrow3 {
+    bottom: 30vh; /* Ajustar según la posición deseada */
+    left: 50vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow3 .label {
+    width: 8rem;
+  }
+  #case_study {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0px;
+  }
+  #case_study .formato {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 18rem;
+    margin: 80px 0px;
+    border-top: 1px solid #F3D7FC;
+    border-bottom: 1px solid #F3D7FC;
+    padding: 40px 0px;
+  }
+  #case_study .formato .info {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #case_study .formato .info .divider {
+    flex-basis: 2%;
+    width: 0.5rem;
+    height: 16.375rem;
+    background: #865297;
+  }
+  #case_study .formato .info .text {
+    width: 24rem;
+    margin-left: 12px;
+    align-self: center;
+  }
+  #case_study .formato .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  #case_study .formato .info .text p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  #case_study .formato .info .text a {
+    color: #512D5D;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #case_study .formato .portada {
+    display: none;
+  }
+  #worked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #worked h2 {
+    color: #232323;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    justify-self: flex-start;
+  }
+  #worked .row {
+    flex-direction: column;
+  }
+  #worked .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(124, 124, 124, 0.2);
+    background: #fcfcfc;
+    width: 15rem;
+    height: 8rem;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+  #worked .row div img {
+    width: 10rem;
+    height: auto;
+  }
+  #worked .row .row1 .row2 {
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #p5-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: -1; /* Coloca el canvas detrás del contenido */
+    overflow: hidden;
+  }
+  #nav {
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(243, 215, 252, 0.08) !important;
+    box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+    backdrop-filter: blur(1px);
+    z-index: 10;
+  }
+  #presentation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--Spacing-xxl, 3rem);
+    width: auto;
+    height: 40rem;
+    margin-top: 20vh;
+  }
+  #presentation .profile_photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 12.5rem 0rem;
+    background-image: url("../../assets/profile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease-in-out;
+  }
+  #presentation .text {
+    width: 20rem;
+    height: auto;
+    padding-top: 40px;
+  }
+  #presentation .text h1 {
+    font-family: Advent Pro, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(#232323);
+  }
+  #presentation .text p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(#232323);
+  }
+  #presentation .arrow-box {
+    position: absolute;
+  }
+  #presentation #arrow1 {
+    top: -4vh; /* Ajustar según la posición deseada */
+    right: -5vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow1 .label {
+    width: 18rem;
+  }
+  #presentation #arrow2 {
+    bottom: 38vh; /* Ajustar según la posición deseada */
+    left: 0vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow2 .label {
+    width: 10rem;
+  }
+  #presentation #arrow3 {
+    bottom: 35vh; /* Ajustar según la posición deseada */
+    left: 50vw; /* Ajustar según la posición deseada */
+  }
+  #presentation #arrow3 .label {
+    width: 8rem;
+  }
+  #case_study {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0px;
+  }
+  #case_study .formato {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 18rem;
+    margin: 80px 0px;
+    border-top: 1px solid #F3D7FC;
+    border-bottom: 1px solid #F3D7FC;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  #case_study .formato .info {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #case_study .formato .info .divider {
+    flex-basis: 2%;
+    width: 0.5rem;
+    height: 16.375rem;
+    background: #865297;
+  }
+  #case_study .formato .info .text {
+    width: 20rem;
+    margin-left: 12px;
+    align-self: center;
+  }
+  #case_study .formato .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  #case_study .formato .info .text p {
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  #case_study .formato .info .text a {
+    color: #512D5D;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  #case_study .formato .portada {
+    display: none;
+  }
+  #worked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+  #worked h2 {
+    color: #232323;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    justify-self: flex-start;
+  }
+  #worked .row {
+    flex-direction: column;
+  }
+  #worked .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(124, 124, 124, 0.2);
+    background: #fcfcfc;
+    width: 15rem;
+    height: 8rem;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+  #worked .row div img {
+    width: 10rem;
+    height: auto;
+  }
+  #worked .row .row1 .row2 {
+    flex-basis: 50%;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: justify;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+.back {
+  position: sticky;
+  top: 120px;
+  margin-top: 120px;
+  margin-left: 38px;
+  color: #512D5D;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.back img {
+  margin-right: 8px;
+}
+.back:hover {
+  text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+  border-bottom: 1px solid #F3D7FC;
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.header .info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.header .info .divider {
+  flex-basis: 2%;
+  width: 0.5rem;
+  height: 16.375rem;
+  background: #865297;
+}
+.header .info .text {
+  width: 24rem;
+  margin-left: 12px;
+  align-self: center;
+}
+.header .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+.header .info .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+.container .menu {
+  position: fixed;
+  margin-top: -40vh;
+  width: 200px; /* Ancho del menú */
+  overflow-x: hidden;
+  padding-top: 32px;
+}
+.container .menu ul li {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+.container .menu ul li a {
+  color: #6B3F7A;
+  text-decoration: none;
+}
+.container .menu ul li a:hover {
+  text-decoration: line-through;
+  color: #BD7ED1;
+  font-family: 600;
+}
+.container .main-content {
+  margin-left: 200px; /* Espacio para el menú fijo */
+  flex-grow: 1;
+  overflow-x: hidden;
+  padding-top: 32px;
+  min-height: fit-content;
+}
+.container .main-content .confidential-note {
+  background-color: #F3F3F3;
+  padding: 26px 0px;
+}
+.container .main-content .confidential-note h2 {
+  width: 90%;
+  margin-left: 5%;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .confidential-note p {
+  width: 90%;
+  margin-left: 5%;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .confidential-note p span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container .main-content .problem {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3rem;
+}
+.container .main-content .problem h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .problem p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .proposed_solution {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .proposed_solution h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .proposed_solution p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .team {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .team h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .team p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .Challenges_overcome {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .Challenges_overcome h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .Challenges_overcome p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .Challenges_overcome ul li {
+  list-style-type: disc;
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .Process h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .Process h3 {
+  margin-top: 2.5rem;
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container .main-content .Process p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .Process p span {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #512D5D;
+}
+.container .main-content .Process p a {
+  text-decoration: none;
+  color: #865297;
+}
+.container .main-content .Process ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process ul li a {
+  text-decoration: none;
+  color: #865297;
+}
+.container .main-content .Process h4 {
+  margin-top: 2.5rem;
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container .main-content .Process img {
+  width: 90%;
+}
+.container .main-content .Process .AI_person .link-template {
+  margin-top: 40px;
+  font-style: italic;
+  color: #7A7A7A;
+}
+.container .main-content .Process .market_share {
+  margin-top: 3.5rem;
+}
+.container .main-content .Process .market_share ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process .definitions {
+  margin-top: 3.5rem;
+}
+.container .main-content .Process .definitions ol li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process .tools ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .conclusion {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .conclusion h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .conclusion p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .thank {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+  border-top: 1px solid #865297;
+  padding-top: 36px;
+  margin-bottom: -90vh;
+}
+.container .main-content .thank h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .thank p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .thank span {
+  color: #512D5D;
+  font-family: Indie Flower;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 70%;
+}
+.container .side-comments {
+  flex-basis: 300px; /* Ancho de la columna de comentarios */
+  font-family: Indie Flower;
+  color: #512D5D;
+  padding-left: 20px;
+}
+.container .side-comments .comment1 {
+  margin-top: 80px;
+}
+.container .side-comments .comment2 {
+  margin-top: 120px;
+}
+.container .side-comments .comment3 {
+  margin-top: 120px;
+}
+.container .side-comments .comment4 {
+  margin-top: 100px;
+}
+.container .side-comments .comment5 {
+  margin-top: 200px;
+}
+.container .side-comments .comment6 {
+  margin-top: 450px;
+}
+.container .side-comments .comment7 {
+  margin-top: 500px;
+}
+.container .side-comments .comment8 {
+  margin-top: 1000px;
+}
+.container .side-comments .comment8 span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .side-comments .comment9 {
+  margin-top: 20px;
+}
+.container .side-comments .comment9 span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (min-width: 1441px) {
+  #nav .navbar-brand {
+    width: 5%;
+  }
+  #nav .navbar-brand img {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .menu {
+    position: fixed;
+    margin-top: -28vh;
+    width: 200px; /* Ancho del menú */
+    overflow-x: hidden;
+    padding-top: 32px;
+  }
+  .container .menu ul li {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+  }
+  .container .menu ul li a {
+    color: #6B3F7A;
+    text-decoration: none;
+  }
+  .container .menu ul li a:active {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #512D5D;
+  }
+  .container .menu ul li a:hover {
+    text-decoration: line-through;
+    color: #865297;
+  }
+  .container .main-content .thank {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .menu {
+    display: none;
+  }
+  .container .main-content {
+    margin-left: 0vw; /* Espacio para el menú fijo */
+    overflow-x: hidden;
+    padding-top: 32px;
+    min-height: fit-content;
+  }
+  .container .main-content .confidential-note {
+    background-color: #F3F3F3;
+    padding: 26px 0px;
+  }
+  .container .main-content .confidential-note h2 {
+    width: 90%;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .confidential-note p {
+    width: 90%;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .confidential-note p span {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .problem {
+    margin-top: 3rem;
+  }
+  .container .main-content .problem h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .problem p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .proposed_solution {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .proposed_solution h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .proposed_solution p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .team {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .team h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .team p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Challenges_overcome h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome ul ol {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .Process h3 {
+    margin-top: 2.5rem;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .container .main-content .Process p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .Process p span {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .container .main-content .Process p a {
+    text-decoration: none;
+    color: #865297;
+  }
+  .container .main-content .Process ul ol {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process ul ol a {
+    text-decoration: none;
+    color: #865297;
+  }
+  .container .main-content .Process h4 {
+    margin-top: 2.5rem;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .container .main-content .Process img {
+    width: 90%;
+  }
+  .container .main-content .Process .AI_person .link-template {
+    margin-top: 40px;
+    font-style: italic;
+    color: #7A7A7A;
+  }
+  .container .main-content .Process .market_share {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process .market_share ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process .definitions {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process .definitions ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process .design p {
+    margin-top: 20px;
+  }
+  .container .main-content .Process .tools ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .conclusion {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .conclusion h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .conclusion p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank {
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 60%;
+  }
+  .container .side-comments {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
