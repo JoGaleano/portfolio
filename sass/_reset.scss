@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none; /*elimina el estilo en las listas*/
+    text-decoration: none; /*elimina las viñetas*/
+    user-select: none; /*impide seleccionar el texto*/
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*para que como minimo sea el viewport*/
+    background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p{text-align: justify;}
+
+main{
+    width: 80vw;
+    margin: auto;
+}
