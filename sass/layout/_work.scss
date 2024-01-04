@@ -192,9 +192,6 @@
                 height: 10rem;
                 display: inline-block;
             }
-            &:hover{
-                transform: scale(0.8);
-            }
         }
 
 
@@ -205,19 +202,26 @@
 #worked{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
     margin-bottom: 80px;
     margin-top: 80px;
-    h2{
-        color: $color-grayscale-grey-dark;
-        font-family: Advent Pro;
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        justify-self: flex-start;
+    .worked-text{
+        h2{
+            color: $color-grayscale-grey-p9;
+            font-family: Advent Pro;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            justify-self: flex-start;
+        }
+        .title-work{
+            font-family: 600;
+            color: $color-grayscale-grey-p9;
+        }
     }
+    
+
     .row{
         div{
             display: flex;
@@ -277,6 +281,21 @@
         display: flex;
         margin-left: 15vw;
         margin-top: 80px;
+    }
+
+
+}
+
+@media (min-width:1200px){
+    #worked{
+        .row{
+            .hover-dir{
+                &:hover{
+                    border: 1px solid $primary-p7;
+                }
+            }
+
+        }
     }
 }
 

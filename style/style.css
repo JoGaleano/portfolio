@@ -1409,26 +1409,26 @@ main {
   height: 10rem;
   display: inline-block;
 }
-#case_study .formato .portada:hover {
-  transform: scale(0.8);
-}
 
 #worked {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   margin-bottom: 80px;
   margin-top: 80px;
 }
-#worked h2 {
-  color: #232323;
+#worked .worked-text h2 {
+  color: #373737;
   font-family: Advent Pro;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   justify-self: flex-start;
+}
+#worked .worked-text .title-work {
+  font-family: 600;
+  color: #373737;
 }
 #worked .row div {
   display: flex;
@@ -1474,6 +1474,11 @@ main {
     display: flex;
     margin-left: 15vw;
     margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  #worked .row .hover-dir:hover {
+    border: 1px solid #865297;
   }
 }
 @media (min-width: 100px) {
