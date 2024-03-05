@@ -303,9 +303,6 @@
     #presentation{
         .profile_photo{
             transition: background-image 0.3s ease-in-out;
-            &:hover{
-                 background-image: url("../../assets/photo_dos.jpeg");
-            }
 
         }
     }
