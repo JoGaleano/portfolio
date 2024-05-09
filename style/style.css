@@ -611,7 +611,7 @@ main .extra .book div p {
   }
   .skill .row img:hover {
     fill: #504646;
-    transform: scale(2);
+    transform: scale(1.5);
     border-radius: 0.25rem;
     background: rgba(255, 255, 255, 0.28);
     box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
@@ -1484,9 +1484,6 @@ main {
 @media (min-width: 100px) {
   #presentation .profile_photo {
     transition: background-image 0.3s ease-in-out;
-  }
-  #presentation .profile_photo:hover {
-    background-image: url("../../assets/photo_dos.jpeg");
   }
 }
 @media (min-width: 768px) and (max-width: 1294px) {

@@ -183,7 +183,9 @@ main{
             img{
                 width: 8rem;
             }
+
         }
+
         .learning{
             margin: 60px 0px;
             font-family: Roboto;
@@ -192,6 +194,8 @@ main{
             font-weight: 300;
             line-height: normal;
         }
+
+       
     }
 
     .extra{
@@ -251,11 +255,12 @@ main{
             display: flex;
             margin-bottom: 20px;
             justify-content: space-between;
+
             img{
                 width: 8rem;
                 &:hover{
                     fill: $color-light-accent-p9;
-                    transform: scale(2);
+                    transform: scale(1.5);
                     border-radius: 0.25rem;
                     background: rgba(255, 255, 255, 0.28);
                     box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
