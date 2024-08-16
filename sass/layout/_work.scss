@@ -105,7 +105,7 @@
         bottom: -10vh; /* Ajustar según la posición deseada */
         left: 30vw; /* Ajustar según la posición deseada */
         .label{
-            width: 8rem;
+            width: 20rem;
         }
     }
 
@@ -206,6 +206,7 @@
     margin-bottom: 80px;
     margin-top: 80px;
     .worked-text{
+        text-align: start;
         h2{
             color: $color-grayscale-grey-p9;
             font-family: Advent Pro;
@@ -230,7 +231,7 @@
             border-radius: 0.5rem;
             border: 1px solid rgba(124, 124, 124, 0.20);
             background: $color-white;
-            width: 20rem;
+            width: 15.5rem;
             height: 8rem;
             margin-left: 8px;
             margin-bottom: 8px;
@@ -394,7 +395,7 @@
             bottom: 30vh; /* Ajustar según la posición deseada */
             left: 50vw; /* Ajustar según la posición deseada */
             .label{
-                width: 8rem;
+                width: 16rem;
             }
         }
     
@@ -525,6 +526,7 @@
         z-index: 10;
     
     }
+
     #presentation{
         position: relative;
         display: flex;
@@ -578,10 +580,10 @@
         }
     
         #arrow2 {
-            bottom: 38vh; /* Ajustar según la posición deseada */
+            bottom: 48vh; /* Ajustar según la posición deseada */
             left: 0vw; /* Ajustar según la posición deseada */
             .label{
-                width: 10rem;
+                width: 8rem;
             }
     
         }
@@ -590,7 +592,7 @@
             bottom: 35vh; /* Ajustar según la posición deseada */
             left: 50vw; /* Ajustar según la posición deseada */
             .label{
-                width: 8rem;
+                width: 12rem;
             }
         }
     
@@ -616,6 +618,7 @@
             .info{
                 display: flex;
                 flex-wrap: nowrap;
+                margin-bottom: 20px;
                 .divider{
                     flex-basis: 2%;
                     width: 0.5rem;
