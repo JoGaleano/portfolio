@@ -1325,7 +1325,7 @@ main {
   left: 30vw; /* Ajustar según la posición deseada */
 }
 #presentation #arrow3 .label {
-  width: 8rem;
+  width: 20rem;
 }
 
 #case_study {
@@ -1417,6 +1417,9 @@ main {
   margin-bottom: 80px;
   margin-top: 80px;
 }
+#worked .worked-text {
+  text-align: start;
+}
 #worked .worked-text h2 {
   color: #373737;
   font-family: Advent Pro;
@@ -1437,7 +1440,7 @@ main {
   border-radius: 0.5rem;
   border: 1px solid rgba(124, 124, 124, 0.2);
   background: #fcfcfc;
-  width: 20rem;
+  width: 15.5rem;
   height: 8rem;
   margin-left: 8px;
   margin-bottom: 8px;
@@ -1568,7 +1571,7 @@ main {
     left: 50vw; /* Ajustar según la posición deseada */
   }
   #presentation #arrow3 .label {
-    width: 8rem;
+    width: 16rem;
   }
   #case_study {
     position: relative;
@@ -1736,18 +1739,18 @@ main {
     width: 18rem;
   }
   #presentation #arrow2 {
-    bottom: 38vh; /* Ajustar según la posición deseada */
+    bottom: 48vh; /* Ajustar según la posición deseada */
     left: 0vw; /* Ajustar según la posición deseada */
   }
   #presentation #arrow2 .label {
-    width: 10rem;
+    width: 8rem;
   }
   #presentation #arrow3 {
     bottom: 35vh; /* Ajustar según la posición deseada */
     left: 50vw; /* Ajustar según la posición deseada */
   }
   #presentation #arrow3 .label {
-    width: 8rem;
+    width: 12rem;
   }
   #case_study {
     position: relative;
@@ -1771,6 +1774,7 @@ main {
   #case_study .formato .info {
     display: flex;
     flex-wrap: nowrap;
+    margin-bottom: 20px;
   }
   #case_study .formato .info .divider {
     flex-basis: 2%;
