@@ -1747,7 +1747,7 @@ main {
   }
   #presentation #arrow3 {
     bottom: 35vh; /* Ajustar según la posición deseada */
-    left: 50vw; /* Ajustar según la posición deseada */
+    left: 30vw; /* Ajustar según la posición deseada */
   }
   #presentation #arrow3 .label {
     width: 12rem;
