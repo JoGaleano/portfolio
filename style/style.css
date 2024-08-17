@@ -1688,6 +1688,12 @@ main {
     backdrop-filter: blur(1px);
     z-index: 10;
   }
+  #nav .navbar-brand {
+    width: 20%;
+  }
+  #nav .navbar-brand img {
+    width: 100%;
+  }
   #presentation {
     position: relative;
     display: flex;
