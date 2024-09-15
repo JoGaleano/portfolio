@@ -792,6 +792,78 @@
     
     
         }
+        
+        .marketing{
+            gap: 14rem;
+            margin: 80px 0px;
+            padding: 80px 0px;
+            .info{
+                .text{
+                    width: 18rem;
+                }
+        }
+    }
+
+    .dashboard{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .directory{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+
+    }
     }
     
     #worked{
