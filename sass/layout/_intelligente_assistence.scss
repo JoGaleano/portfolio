@@ -411,7 +411,7 @@
 
     .side-comments{
         flex-basis: 300px; /* Ancho de la columna de comentarios */
-        font-family: Roboto, Arial, Helvetica, sans-serif;
+        font-family: Indie Flower;
         color: $primary-p9;
         padding-left: 20px;
         .comment1{
@@ -542,75 +542,6 @@
 
 
 @media (max-width:767px){
-    .back{
-        position: relative !important; /* Cambia a absolute */
-        top: 0px !important; /* Ajusta la posición superior */
-        left: 0px; /* Ajusta la posición lateral */
-        margin-bottom: 32px ;
-        color: $primary-p9;
-        font-family: Roboto;
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        text-decoration: none;
-        width: 50%;
-        img{
-            margin-right: 8px;
-        }
-        &:hover{
-            text-decoration: none;
-        }
-    }
-
-    .header{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 18rem;
-        border-bottom: 1px solid $primary-p2;
-        padding: 40px 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        .info{
-            display: flex;
-            flex-wrap: nowrap;
-            align-self: center;
-            justify-content: center;
-            padding-bottom: 20px;
-            width: 80%;
-            .divider{
-                flex-basis: 2%;
-                width: 1rem;
-                height: 16.375rem;
-                background: $primary-p7;
-            } 
-    
-            .text{
-                width: 8rem;
-                margin-left: 12px;
-                align-self: center;
-                h2{
-                    font-family: Advent Pro;
-                    font-size: 2.5rem;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: normal;
-                    color: $primary-p9;
-                }
-                p{
-                    font-family: Roboto;
-                    font-size: 1rem;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                }
-            }
-        }
-    }
-
     .container{
         display: flex;
         position: relative;
