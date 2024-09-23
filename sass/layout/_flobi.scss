@@ -20,7 +20,6 @@
     }
     &:hover{
         text-decoration: line-through;
-        text-decoration: line-through;
     }
 }
 
@@ -197,7 +196,7 @@
 
 .side-comments{
     flex-basis: 300px; /* Ancho de la columna de comentarios */
-    font-family: Indie Flower;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     color: $primary-p9;
     padding-left: 20px;
     .comment01{
@@ -249,7 +248,24 @@
 @media (max-width:767px){
 
     .back{
-        display: none;
+        position: relative !important; /* Cambia a absolute */
+        top: 0px !important; /* Ajusta la posición superior */
+        left: 0px; /* Ajusta la posición lateral */
+        margin-bottom: 32px ;
+        color: $primary-p9;
+        font-family: Roboto;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-decoration: none;
+        width: 50%;
+        img{
+            margin-right: 8px;
+        }
+        &:hover{
+            text-decoration: none;
+        }
     }
 
     .header{
@@ -262,7 +278,7 @@
         padding: 40px 0px;
         padding-bottom: 0px;
         margin-bottom: 0px;
-        margin-top: 80px;
+        margin-top: 0px;
         .info{
             display: flex;
             flex-wrap: nowrap;
@@ -300,7 +316,6 @@
         }
     }
     
-
     .container{
         display: flex;
         position: relative;
