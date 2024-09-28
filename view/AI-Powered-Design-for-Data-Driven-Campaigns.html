@@ -26,6 +26,7 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2ZHWDZD"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"><img src="../assets/logo.svg" alt="Logo"></a>
@@ -133,25 +134,25 @@
                         <li>Shop characters to accompany the brand.</li>
                     </ul>
                     <p>Generative artificial intelligence enabled rapid iterations of these visual elements, ensuring that the content was engaging, visually consistent and adaptable to different platforms (social media and in-app displays).</p>
-                    <img src="../assets/AiGenerate01.png" alt="AI Process">
+                    <img src="../assets/AiGenerate01.png" alt="AI Process" class="expandable-img animated-img">
                 </div>
 
                 <div id="GraphicLine" class="GraphicLine">
                     <h3>Adaptation to the graphic line</h3>
                     <p>While generative AI enables faster and more efficient asset creation, it still has limitations, particularly in accurately applying specific colors and brand elements. To ensure the visuals met the required standards, I used Photoshop, Lightroom, and Adobe Illustrator for final refinements and adjustments. Below are some real examples showcasing the polished results.</p>
                     <div class="imagesProcess">
-                        <img src="../assets/adaptation01.png" alt="process">
-                        <img src="../assets/adaptation02.png" alt="process">
-                        <img src="../assets/adaptation03.png" alt="process">
-                        <img src="../assets/adaptation04.png" alt="process">
+                        <img src="../assets/adaptation01.png" alt="process" class="expandable-img animated-img" >
+                        <img src="../assets/adaptation02.png" alt="process" class="expandable-img animated-img">
+                        <img src="../assets/adaptation03.png" alt="process" class="expandable-img animated-img">
+                        <img src="../assets/adaptation04.png" alt="process" class="expandable-img animated-img">
                     </div>
                 </div>
 
                 <div id="FinalCreation" class="FinalCreation">
                     <h3>Final creation of the graphic pieces</h3>
                     <div class="imagesProcess">
-                        <img src="../assets/finalImages01.png" alt="process">
-                        <img src="../assets/finalImages02.png" alt="process">
+                        <img src="../assets/finalImages01.png" alt="process" class="expandable-img animated-img">
+                        <img src="../assets/finalImages02.png" alt="process" class="expandable-img animated-img">
                     </div>
                 </div>
                 
@@ -228,6 +229,61 @@
 
     <!-- Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Crear el modal de imagen
+          const imageModal = document.createElement('div');
+          imageModal.classList.add('image-modal');
+          document.body.appendChild(imageModal);
+        
+          // Crear la imagen dentro del modal
+          const modalImg = document.createElement('img');
+          imageModal.appendChild(modalImg);
+        
+          // Crear el botón de cerrar
+          const closeButton = document.createElement('button');
+          closeButton.textContent = 'Close view';
+          imageModal.appendChild(closeButton);
+        
+          // Detectar clic en la imagen para expandirla
+          document.querySelectorAll('.expandable-img').forEach(img => {
+            img.addEventListener('click', function() {
+              modalImg.src = img.src;
+              imageModal.style.display = 'flex';
+            });
+          });
+        
+          // Cerrar el modal al hacer clic en el botón
+          closeButton.addEventListener('click', function() {
+            imageModal.style.display = 'none';
+          });
+        
+          // Cerrar el modal al hacer clic en cualquier parte del fondo (opcional)
+          imageModal.addEventListener('click', function(event) {
+            // Evitar que el clic en la imagen o el botón cierre el modal
+            if (event.target === imageModal) {
+              imageModal.style.display = 'none';
+            }
+          });
+        });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+    document.querySelectorAll('.animated-img').forEach(img => {
+        img.addEventListener('mouseover', () => {
+        anime({
+            targets: img, // Use the current img element
+            scale: [1, 1.1],
+            easing: 'easeInOutQuad',
+            duration: 500,
+            direction: 'alternate'
+        });
+        });
+  });
+</script>
+        
 
 
 </body>
