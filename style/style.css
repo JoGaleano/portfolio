@@ -610,14 +610,6 @@ main .extra .book div p {
   .skill .row img {
     width: 8rem;
   }
-  .skill .row img:hover {
-    fill: #504646;
-    transform: scale(1.5);
-    border-radius: 0.25rem;
-    background: rgba(255, 255, 255, 0.28);
-    box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
-    backdrop-filter: blur(2px);
-  }
 }
 @media (max-width: 767px) {
   .header-resume .info .text {
