@@ -258,14 +258,6 @@ main{
 
             img{
                 width: 8rem;
-                &:hover{
-                    fill: $color-light-accent-p9;
-                    transform: scale(1.5);
-                    border-radius: 0.25rem;
-                    background: rgba(255, 255, 255, 0.28);
-                    box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
-                    backdrop-filter: blur(2px);
-                }
             }
         }
 

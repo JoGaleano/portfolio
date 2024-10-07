@@ -35,7 +35,7 @@ body {
 
 /* justificacion de todos los parrafos */
 p {
-  text-align: justify;
+  text-align: start;
 }
 
 main {
@@ -61,7 +61,7 @@ body {
 
 /* justificacion de todos los parrafos */
 p {
-  text-align: justify;
+  text-align: start;
 }
 
 main {
@@ -357,7 +357,7 @@ body {
 
 /* justificacion de todos los parrafos */
 p {
-  text-align: justify;
+  text-align: start;
 }
 
 main {
@@ -609,14 +609,6 @@ main .extra .book div p {
   .skill .row img {
     width: 8rem;
   }
-  .skill .row img:hover {
-    fill: #504646;
-    transform: scale(1.5);
-    border-radius: 0.25rem;
-    background: rgba(255, 255, 255, 0.28);
-    box-shadow: 0px 4px 4px 0px rgba(217, 150, 238, 0.08), 4px 0px 4px 0px rgba(217, 150, 238, 0.08);
-    backdrop-filter: blur(2px);
-  }
 }
 @media (max-width: 767px) {
   .header-resume .info .text {
@@ -726,7 +718,7 @@ body {
 
 /* justificacion de todos los parrafos */
 p {
-  text-align: justify;
+  text-align: start;
 }
 
 main {
@@ -1877,7 +1869,7 @@ body {
 
 /* justificacion de todos los parrafos */
 p {
-  text-align: justify;
+  text-align: start;
 }
 
 main {
@@ -2665,5 +2657,918 @@ main {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none; /*elimina el estilo en las listas*/
+  text-decoration: none; /*elimina las viñetas*/
+  user-select: none; /*impide seleccionar el texto*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*para que como minimo sea el viewport*/
+  background-color: white;
+}
+
+/* justificacion de todos los parrafos */
+p {
+  text-align: start;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+/*VARIABLES - PALETA DE COLORES */
+/* GREY SCALE */
+/* DARK PRIMARY */
+/* DARK SECONDARY */
+/* DARK ACCENT */
+/* PRIMARY */
+/* LIGHT PRIMARY */
+/* LIGHT ACCENT */
+/* ACCENT */
+/* INFORMATION */
+/* HIGHLIGHT */
+.back {
+  position: sticky;
+  top: 120px;
+  margin-top: 120px;
+  margin-left: 38px;
+  color: #512D5D;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+.back img {
+  margin-right: 8px;
+}
+.back:hover {
+  text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18rem;
+  border-bottom: 1px solid #F3D7FC;
+  padding: 40px 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.header .info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-self: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.header .info .divider {
+  flex-basis: 2%;
+  width: 0.5rem;
+  height: 16.375rem;
+  background: #865297;
+}
+.header .info .text {
+  width: 28rem;
+  margin-left: 12px;
+  align-self: center;
+}
+.header .info .text h2 {
+  font-family: Advent Pro;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: #512D5D;
+}
+.header .info .text p {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+.container .menu {
+  position: fixed;
+  margin-top: -40vh;
+  width: 200px; /* Ancho del menú */
+  overflow-x: hidden;
+  padding-top: 32px;
+}
+.container .menu ul li {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 8px;
+}
+.container .menu ul li a {
+  color: #6B3F7A;
+  text-decoration: none;
+}
+.container .menu ul li a:hover {
+  text-decoration: line-through;
+  color: #BD7ED1;
+  font-family: 600;
+}
+.container .main-content {
+  margin-left: 200px; /* Espacio para el menú fijo */
+  flex-grow: 1;
+  overflow-x: hidden;
+  padding-top: 32px;
+  min-height: fit-content;
+}
+.container .main-content span {
+  font-weight: 500;
+}
+.container .main-content .confidential-note {
+  background-color: #F3F3F3;
+  padding: 26px 0px;
+}
+.container .main-content .confidential-note h2 {
+  width: 90%;
+  margin-left: 5%;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .confidential-note p {
+  width: 90%;
+  margin-left: 5%;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .confidential-note p span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.container .main-content .overview {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3rem;
+}
+.container .main-content .overview h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .overview p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .overview p span {
+  font-weight: 500;
+}
+.container .main-content .team {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .team h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .team p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .team p span {
+  font-weight: 500;
+}
+.container .main-content .Challenges_overcome {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .Challenges_overcome h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .Challenges_overcome p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .Challenges_overcome p span {
+  font-weight: 500;
+}
+.container .main-content .Challenges_overcome ul li {
+  list-style-type: disc;
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .Process h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .Process h3 {
+  margin-top: 2.5rem;
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container .main-content .Process p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .Process p span {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #512D5D;
+}
+.container .main-content .Process p a {
+  text-decoration: none;
+  color: #865297;
+}
+.container .main-content .Process ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process ul li a {
+  text-decoration: none;
+  color: #865297;
+}
+.container .main-content .Process h4 {
+  margin-top: 2.5rem;
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.container .main-content .Process img {
+  width: 90%;
+}
+.container .main-content .Process .imagesProcess img {
+  margin-bottom: 2rem;
+}
+.container .main-content .Process .market_share {
+  margin-top: 3.5rem;
+}
+.container .main-content .Process .market_share ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process .definitions {
+  margin-top: 3.5rem;
+}
+.container .main-content .Process .definitions ol li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .Process .tools ul li {
+  display: flex;
+  align-items: flex-start;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 1rem;
+}
+.container .main-content .conclusion {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+}
+.container .main-content .conclusion h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .conclusion p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .thank {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 3.5rem;
+  border-top: 1px solid #865297;
+  padding-top: 36px;
+  margin-bottom: -90vh;
+}
+.container .main-content .thank h2 {
+  font-family: Advent Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .main-content .thank p {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container .main-content .thank span {
+  color: #512D5D;
+  font-family: Indie Flower;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 70%;
+}
+.container .side-comments {
+  flex-basis: 300px; /* Ancho de la columna de comentarios */
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: #512D5D;
+  padding-left: 20px;
+}
+.container .side-comments .comment1 {
+  margin-top: 80px;
+}
+.container .side-comments .comment2 {
+  margin-top: 80px;
+}
+.container .side-comments .comment3 {
+  margin-top: 80px;
+}
+.container .side-comments .comment4 {
+  margin-top: 100px;
+}
+.container .side-comments .comment5 {
+  margin-top: 240px;
+}
+.container .side-comments .comment6 {
+  margin-top: 80px;
+}
+.container .side-comments .comment7 {
+  margin-top: 500px;
+}
+.container .side-comments .comment8 {
+  margin-top: 1000px;
+}
+.container .side-comments .comment8 span {
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .side-comments .comment9 {
+  margin-top: 800px;
+}
+.container .side-comments .comment9 span {
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.container .side-comments .comment10 {
+  margin-top: 600px;
+}
+
+@media (min-width: 1441px) {
+  #nav .navbar-brand {
+    width: 5%;
+  }
+  #nav .navbar-brand img {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .menu {
+    position: fixed;
+    margin-top: -28vh;
+    width: 200px; /* Ancho del menú */
+    overflow-x: hidden;
+    padding-top: 32px;
+  }
+  .container .menu ul li {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 8px;
+  }
+  .container .menu ul li a {
+    color: #6B3F7A;
+    text-decoration: none;
+  }
+  .container .menu ul li a:active {
+    text-decoration: underline;
+    font-weight: 600;
+    color: #512D5D;
+  }
+  .container .menu ul li a:hover {
+    text-decoration: line-through;
+    color: #865297;
+  }
+  .container .main-content .thank {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .thank span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  .expandable-img {
+    cursor: pointer;
+  }
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 0, 32, 0.644);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image-modal img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+  /* Estilos para el botón */
+  .image-modal button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #BD7ED1;
+    color: #f3eded;
+    outline: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid #BD7ED1;
+    font-weight: 600;
+    font-family: "Advent Pro";
+    font-size: 1.2rem;
+  }
+  .image-modal button:hover {
+    background-color: transparent;
+    border: 2px solid #f3eded;
+  }
+}
+@media (max-width: 767px) {
+  .back {
+    position: relative !important; /* Cambia a absolute */
+    top: 0px !important; /* Ajusta la posición superior */
+    left: 0px; /* Ajusta la posición lateral */
+    margin-bottom: 32px;
+    color: #512D5D;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    width: 50%;
+  }
+  .back img {
+    margin-right: 8px;
+  }
+  .back:hover {
+    text-decoration: none;
+  }
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+    border-bottom: 1px solid #F3D7FC;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .header .info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 80%;
+  }
+  .header .info .divider {
+    flex-basis: 2%;
+    width: 1rem;
+    height: 16.375rem;
+    background: #865297;
+  }
+  .header .info .text {
+    width: 100%;
+    margin-left: 12px;
+    align-self: center;
+  }
+  .header .info .text h2 {
+    font-family: Advent Pro;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .header .info .text p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container {
+    display: flex;
+    position: relative;
+  }
+  .container .menu {
+    display: none;
+  }
+  .container .main-content {
+    margin-left: 0vw; /* Espacio para el menú fijo */
+    overflow-x: hidden;
+    padding-top: 32px;
+    min-height: fit-content;
+  }
+  .container .main-content .confidential-note {
+    background-color: #F3F3F3;
+    padding: 26px 0px;
+  }
+  .container .main-content .confidential-note h2 {
+    width: 90%;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .confidential-note p {
+    width: 90%;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .confidential-note p span {
+    font-family: Roboto;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container .main-content .problem {
+    margin-top: 3rem;
+  }
+  .container .main-content .problem h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .problem p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .proposed_solution {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .proposed_solution h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .proposed_solution p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .team {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .team h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .team p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Challenges_overcome h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .Challenges_overcome ul ol {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .Process h3 {
+    margin-top: 2.5rem;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .container .main-content .Process p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .Process p span {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #512D5D;
+  }
+  .container .main-content .Process p a {
+    text-decoration: none;
+    color: #865297;
+  }
+  .container .main-content .Process ul ol {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process ul ol a {
+    text-decoration: none;
+    color: #865297;
+  }
+  .container .main-content .Process h4 {
+    margin-top: 2.5rem;
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .container .main-content .Process img {
+    width: 90%;
+  }
+  .container .main-content .Process .AI_person .link-template {
+    margin-top: 40px;
+    font-style: italic;
+    color: #7A7A7A;
+  }
+  .container .main-content .Process .market_share {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process .market_share ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process .definitions {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .Process .definitions ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .Process .design p {
+    margin-top: 20px;
+  }
+  .container .main-content .Process .tools ul li {
+    display: flex;
+    align-items: flex-start;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
+  .container .main-content .conclusion {
+    margin-top: 3.5rem;
+  }
+  .container .main-content .conclusion h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .conclusion p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .thank {
+    margin-top: 3.5rem;
+    border-top: 1px solid #865297;
+    padding-top: 36px;
+    margin-bottom: -90vh;
+  }
+  .container .main-content .thank h2 {
+    font-family: Advent Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .container .main-content .thank p {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .container .main-content .thank span {
+    color: #512D5D;
+    font-family: Indie Flower;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-left: 60%;
+  }
+  .container .side-comments {
+    display: none;
+  }
+}
+>>>>>>> dev
 
 /*# sourceMappingURL=style.css.map */
