@@ -17,7 +17,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -756,6 +755,7 @@ main {
 }
 .back:hover {
   text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .header {
@@ -910,7 +910,7 @@ main {
 
 .side-comments {
   flex-basis: 300px; /* Ancho de la columna de comentarios */
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Indie Flower;
   color: #512D5D;
   padding-left: 20px;
 }
@@ -961,24 +961,7 @@ main {
 
 @media (max-width: 767px) {
   .back {
-    position: relative !important; /* Cambia a absolute */
-    top: 0px !important; /* Ajusta la posición superior */
-    left: 0px; /* Ajusta la posición lateral */
-    margin-bottom: 32px;
-    color: #512D5D;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    width: 50%;
-  }
-  .back img {
-    margin-right: 8px;
-  }
-  .back:hover {
-    text-decoration: none;
+    display: none;
   }
   .header {
     position: relative;
@@ -990,7 +973,7 @@ main {
     padding: 40px 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    margin-top: 0px;
+    margin-top: 80px;
   }
   .header .info {
     display: flex;
@@ -1418,105 +1401,6 @@ main {
   height: 10rem;
   display: inline-block;
 }
-#case_study .marketing {
-  gap: 14rem;
-}
-#case_study .marketing .info .text {
-  width: 28rem;
-}
-#case_study .marketing .portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 100%;
-  border: 3px solid rgba(134, 82, 151, 0);
-  background: #fcfcfc;
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
-}
-#case_study .marketing .portada img {
-  width: 90%;
-  height: auto;
-  display: inline-block;
-  margin-left: 5%;
-}
-#case_study .dashboard .info .divider {
-  background: #CCCCCC;
-}
-#case_study .dashboard .info .text h2 {
-  color: #B8B8B8;
-}
-#case_study .dashboard .info .text a {
-  color: #B8B8B8;
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  cursor: auto;
-}
-#case_study .dashboard .info .text a:hover {
-  text-decoration: none;
-  color: #B8B8B8;
-  font-family: 600;
-}
-#case_study .dashboard .portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 100%;
-  border: 3px solid rgba(134, 82, 151, 0);
-  background: #fcfcfc;
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
-}
-#case_study .dashboard .portada img {
-  width: 10rem;
-  height: 10rem;
-  display: inline-block;
-  filter: grayscale(100%);
-}
-#case_study .directory .info .divider {
-  background: #CCCCCC;
-}
-#case_study .directory .info .text h2 {
-  color: #B8B8B8;
-}
-#case_study .directory .info .text a {
-  color: #B8B8B8;
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  cursor: auto;
-}
-#case_study .directory .info .text a:hover {
-  text-decoration: none;
-  color: #B8B8B8;
-  font-family: 600;
-}
-#case_study .directory .portada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18rem;
-  height: 18rem;
-  border-radius: 100%;
-  border: 3px solid rgba(134, 82, 151, 0);
-  background: #fcfcfc;
-  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
-}
-#case_study .directory .portada img {
-  width: 10rem;
-  height: 10rem;
-  display: inline-block;
-  filter: grayscale(100%);
-}
 
 #worked {
   display: flex;
@@ -1927,56 +1811,6 @@ main {
   }
   #case_study .formato .portada {
     display: none;
-  }
-  #case_study .marketing {
-    gap: 14rem;
-    margin: 80px 0px;
-    padding: 80px 0px;
-  }
-  #case_study .marketing .info .text {
-    width: 18rem;
-  }
-  #case_study .dashboard .info .divider {
-    background: #CCCCCC;
-  }
-  #case_study .dashboard .info .text h2 {
-    color: #B8B8B8;
-  }
-  #case_study .dashboard .info .text a {
-    color: #B8B8B8;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    cursor: auto;
-  }
-  #case_study .dashboard .info .text a:hover {
-    text-decoration: none;
-    color: #B8B8B8;
-    font-family: 600;
-  }
-  #case_study .directory .info .divider {
-    background: #CCCCCC;
-  }
-  #case_study .directory .info .text h2 {
-    color: #B8B8B8;
-  }
-  #case_study .directory .info .text a {
-    color: #B8B8B8;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    cursor: auto;
-  }
-  #case_study .directory .info .text a:hover {
-    text-decoration: none;
-    color: #B8B8B8;
-    font-family: 600;
   }
   #worked {
     display: flex;
@@ -2428,7 +2262,7 @@ main {
 }
 .container .side-comments {
   flex-basis: 300px; /* Ancho de la columna de comentarios */
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Indie Flower;
   color: #512D5D;
   padding-left: 20px;
 }
@@ -2546,72 +2380,6 @@ main {
   }
 }
 @media (max-width: 767px) {
-  .back {
-    position: relative !important; /* Cambia a absolute */
-    top: 0px !important; /* Ajusta la posición superior */
-    left: 0px; /* Ajusta la posición lateral */
-    margin-bottom: 32px;
-    color: #512D5D;
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: none;
-    width: 50%;
-  }
-  .back img {
-    margin-right: 8px;
-  }
-  .back:hover {
-    text-decoration: none;
-  }
-  .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18rem;
-    border-bottom: 1px solid #F3D7FC;
-    padding: 40px 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  .header .info {
-    display: flex;
-    flex-wrap: nowrap;
-    align-self: center;
-    justify-content: center;
-    padding-bottom: 20px;
-    width: 80%;
-  }
-  .header .info .divider {
-    flex-basis: 2%;
-    width: 1rem;
-    height: 16.375rem;
-    background: #865297;
-  }
-  .header .info .text {
-    width: 8rem;
-    margin-left: 12px;
-    align-self: center;
-  }
-  .header .info .text h2 {
-    font-family: Advent Pro;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: #512D5D;
-  }
-  .header .info .text p {
-    font-family: Roboto;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
   .container {
     display: flex;
     position: relative;
@@ -2889,6 +2657,8 @@ main {
     display: none;
   }
 }
+<<<<<<< HEAD
+=======
 * {
   box-sizing: border-box;
   margin: 0;
@@ -3799,5 +3569,6 @@ main {
     display: none;
   }
 }
+>>>>>>> dev
 
 /*# sourceMappingURL=style.css.map */
