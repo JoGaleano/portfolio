@@ -1401,6 +1401,105 @@ main {
   height: 10rem;
   display: inline-block;
 }
+#case_study .marketing {
+  gap: 14rem;
+}
+#case_study .marketing .info .text {
+  width: 28rem;
+}
+#case_study .marketing .portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  border: 3px solid rgba(134, 82, 151, 0);
+  background: #fcfcfc;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+#case_study .marketing .portada img {
+  width: 90%;
+  height: auto;
+  display: inline-block;
+  margin-left: 5%;
+}
+#case_study .dashboard .info .divider {
+  background: #CCCCCC;
+}
+#case_study .dashboard .info .text h2 {
+  color: #B8B8B8;
+}
+#case_study .dashboard .info .text a {
+  color: #B8B8B8;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: auto;
+}
+#case_study .dashboard .info .text a:hover {
+  text-decoration: none;
+  color: #B8B8B8;
+  font-family: 600;
+}
+#case_study .dashboard .portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  border: 3px solid rgba(134, 82, 151, 0);
+  background: #fcfcfc;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+#case_study .dashboard .portada img {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  filter: grayscale(100%);
+}
+#case_study .directory .info .divider {
+  background: #CCCCCC;
+}
+#case_study .directory .info .text h2 {
+  color: #B8B8B8;
+}
+#case_study .directory .info .text a {
+  color: #B8B8B8;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: auto;
+}
+#case_study .directory .info .text a:hover {
+  text-decoration: none;
+  color: #B8B8B8;
+  font-family: 600;
+}
+#case_study .directory .portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  border: 3px solid rgba(134, 82, 151, 0);
+  background: #fcfcfc;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+}
+#case_study .directory .portada img {
+  width: 10rem;
+  height: 10rem;
+  display: inline-block;
+  filter: grayscale(100%);
+}
 
 #worked {
   display: flex;
@@ -1811,6 +1910,56 @@ main {
   }
   #case_study .formato .portada {
     display: none;
+  }
+  #case_study .marketing {
+    gap: 14rem;
+    margin: 80px 0px;
+    padding: 80px 0px;
+  }
+  #case_study .marketing .info .text {
+    width: 18rem;
+  }
+  #case_study .dashboard .info .divider {
+    background: #CCCCCC;
+  }
+  #case_study .dashboard .info .text h2 {
+    color: #B8B8B8;
+  }
+  #case_study .dashboard .info .text a {
+    color: #B8B8B8;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: auto;
+  }
+  #case_study .dashboard .info .text a:hover {
+    text-decoration: none;
+    color: #B8B8B8;
+    font-family: 600;
+  }
+  #case_study .directory .info .divider {
+    background: #CCCCCC;
+  }
+  #case_study .directory .info .text h2 {
+    color: #B8B8B8;
+  }
+  #case_study .directory .info .text a {
+    color: #B8B8B8;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: auto;
+  }
+  #case_study .directory .info .text a:hover {
+    text-decoration: none;
+    color: #B8B8B8;
+    font-family: 600;
   }
   #worked {
     display: flex;
