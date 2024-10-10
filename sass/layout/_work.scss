@@ -197,6 +197,128 @@
 
     }
 
+    .marketing{
+        gap: 14rem;
+        .info{
+            .text{
+                width: 28rem;
+            }
+        }
+        .portada{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 100%;
+            border:3px solid rgba(134, 82, 151, 0.00);
+            background: $color-white;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+            img{
+                width: 90%;
+                height: auto;
+                display: inline-block;
+                margin-left: 5%;
+            }
+        }
+    }
+
+    .dashboard{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+
+        .portada{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 100%;
+            border:3px solid rgba(134, 82, 151, 0.00);
+            background: $color-white;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+            img{
+                width: 10rem;
+                height: 10rem;
+                display: inline-block;
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+    .directory{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+
+        .portada{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18rem;
+            height: 18rem;
+            border-radius: 100%;
+            border:3px solid rgba(134, 82, 151, 0.00);
+            background: $color-white;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
+            img{
+                width: 10rem;
+                height: 10rem;
+                display: inline-block;
+                filter: grayscale(100%);
+            }
+        }
+    }
+
 }
 
 #worked{
@@ -670,6 +792,78 @@
     
     
         }
+        
+        .marketing{
+            gap: 14rem;
+            margin: 80px 0px;
+            padding: 80px 0px;
+            .info{
+                .text{
+                    width: 18rem;
+                }
+        }
+    }
+
+    .dashboard{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .directory{
+        .info{
+            .divider{
+                background: $color-grayscale-grey-p3;
+            } 
+
+            .text{
+                h2{
+                    color: $color-grayscale-grey-p4;
+                }
+                a{
+                    color:$color-grayscale-grey-p4;
+                    text-decoration: none;
+                    font-family: Roboto;
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    cursor: auto;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-grayscale-grey-p4;
+                        font-family: 600;
+                    }
+                }
+            }
+
+        }
+
+    }
     }
     
     #worked{
