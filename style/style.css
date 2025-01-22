@@ -1484,9 +1484,6 @@ main .extra .book div p {
     background-repeat: no-repeat;
     transition: background-image 0.3s ease-in-out;
   }
-  #presentation .profile_photo:hover {
-    background-image: url("../../assets/photo_dos.jpeg");
-  }
   #presentation .text {
     width: 23rem;
     height: auto;
@@ -1517,7 +1514,7 @@ main .extra .book div p {
   }
   #presentation #arrow2 {
     bottom: 50vh; /* Ajustar según la posición deseada */
-    left: 0vw; /* Ajustar según la posición deseada */
+    left: 10vw; /* Ajustar según la posición deseada */
   }
   #presentation #arrow2 .label {
     width: 12rem;
@@ -1694,25 +1691,13 @@ main .extra .book div p {
     position: absolute;
   }
   #presentation #arrow1 {
-    top: -4vh; /* Ajustar según la posición deseada */
-    right: -5vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow1 .label {
-    width: 18rem;
+    display: none;
   }
   #presentation #arrow2 {
-    bottom: 48vh; /* Ajustar según la posición deseada */
-    left: 0vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow2 .label {
-    width: 8rem;
+    display: none;
   }
   #presentation #arrow3 {
-    bottom: 35vh; /* Ajustar según la posición deseada */
-    left: 30vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow3 .label {
-    width: 12rem;
+    display: none;
   }
   #case_study {
     position: relative;
