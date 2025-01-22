@@ -1,6 +1,6 @@
-@import "../base/reset";
-@import "../base/color";
-@import "../base/typography";
+@use "../base/reset";
+@use "../base/color";
+@use "../base/typography";
 
 
 .back{
@@ -8,7 +8,7 @@
     top: 120px;
     margin-top: 120px;
     margin-left: 38px;
-    color: $primary-p9;
+    color:  color.$primary-p9;
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: 18rem;
-    border-bottom: 1px solid $primary-p2;
+    border-bottom: 1px solid  color.$primary-p2;
     padding: 40px 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -44,7 +44,7 @@
             flex-basis: 2%;
             width: 0.5rem;
             height: 16.375rem;
-            background: $primary-p7;
+            background:  color.$primary-p7;
         } 
 
         .text{
@@ -57,7 +57,7 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                color: $primary-p9;
+                color:  color.$primary-p9;
             }
             p{
                 font-family: Roboto;
@@ -99,7 +99,7 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    color: $color-grayscale-grey-p9;
+                    color:  color.$color-grayscale-grey-p9;
                     margin-bottom: 8px;
                 }
                 span{
@@ -112,7 +112,7 @@
     }
 
     .timeline{
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 20px;
         img{
             object-fit: contain;
@@ -122,7 +122,7 @@
     }
 
     .problem{
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 20px;
         ul{
             li{
@@ -133,11 +133,11 @@
                 line-height: normal;
                 padding-bottom: 8px;
                 a{
-                    color: $primary-p8;
+                    color:  color.$primary-p8;
                     text-decoration: none;
                     &:hover{
                         text-decoration: line-through;
-                        color: $primary-p5;
+                        color:  color.$primary-p5;
                         font-family: 600;
                     }
                 }
@@ -151,13 +151,13 @@
     }
 
     .team{
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 20px;
     }
 
 
     .test_iteration{
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 20px;
         img{
             object-fit: contain;
@@ -184,7 +184,7 @@
             font-style: normal;
             font-weight: 800;
             line-height: normal;
-            color: $primary-p9;
+            color:  color.$primary-p9;
         }
     }
 
@@ -198,7 +198,7 @@
 .side-comments{
     flex-basis: 300px; /* Ancho de la columna de comentarios */
     font-family: Indie Flower;
-    color: $primary-p9;
+    color:  color.$primary-p9;
     padding-left: 20px;
     .comment01{
         margin-top: 80px;
@@ -215,7 +215,7 @@
     .comment05{
         margin-top: 800px;
         a{
-            color: $primary-p7;
+            color:  color.$primary-p7;
         }
     }
     .comment06{
@@ -258,7 +258,7 @@
         align-items: center;
         justify-content: center;
         gap: 18rem;
-        border-bottom: 1px solid $primary-p2;
+        border-bottom: 1px solid  color.$primary-p2;
         padding: 40px 0px;
         padding-bottom: 0px;
         margin-bottom: 0px;
@@ -274,7 +274,7 @@
                 flex-basis: 2%;
                 width: 1rem;
                 height: 16.375rem;
-                background: $primary-p7;
+                background:  color.$primary-p7;
             } 
     
             .text{
@@ -287,7 +287,7 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
                 p{
                     font-family: Roboto;
@@ -340,7 +340,7 @@
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
-                            color: $color-grayscale-grey-p9;
+                            color:  color.$color-grayscale-grey-p9;
                             margin-bottom: 8px;
                             margin-top: 12px;
                             text-align: start;
@@ -374,7 +374,7 @@
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         
@@ -385,7 +385,7 @@
 
             .thank-flobi{
                 margin-top: 3.5rem;
-                border-top: 1px solid $primary-p7;
+                border-top: 1px solid  color.$primary-p7;
                 padding-top: 36px;
                 margin-bottom: -90vh;
                 h2{
@@ -403,7 +403,7 @@
                     line-height: normal;
                 }
                 span{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 1.5rem !important;
                     font-style: normal;
@@ -457,7 +457,7 @@
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
-                            color: $color-grayscale-grey-p9;
+                            color:  color.$color-grayscale-grey-p9;
                             margin-bottom: 8px;
                             margin-top: 12px;
                             text-align: start;
@@ -491,7 +491,7 @@
                     font-style: normal;
                     font-weight: 800;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         
@@ -502,7 +502,7 @@
 
             .thank-flobi{
                 margin-top: 3.5rem;
-                border-top: 1px solid $primary-p7;
+                border-top: 1px solid  color.$primary-p7;
                 padding-top: 36px;
                 margin-bottom: -90vh;
                 h2{
@@ -520,7 +520,7 @@
                     line-height: normal;
                 }
                 span{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 1.5rem !important;
                     font-style: normal;

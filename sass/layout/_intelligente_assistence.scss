@@ -1,6 +1,6 @@
-@import "../base/reset";
-@import "../base/color";
-@import "../base/typography";
+@use "../base/reset";
+@use "../base/color";
+@use "../base/typography";
 
 
 .back{
@@ -8,7 +8,7 @@
     top: 120px;
     margin-top: 120px;
     margin-left: 38px;
-    color: $primary-p9;
+    color:  color.$primary-p9;
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: 18rem;
-    border-bottom: 1px solid $primary-p2;
+    border-bottom: 1px solid  color.$primary-p2;
     padding: 40px 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -44,7 +44,7 @@
             flex-basis: 2%;
             width: 0.5rem;
             height: 16.375rem;
-            background: $primary-p7;
+            background:  color.$primary-p7;
         } 
 
         .text{
@@ -57,7 +57,7 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                color: $primary-p9;
+                color:  color.$primary-p9;
             }
             p{
                 font-family: Roboto;
@@ -88,11 +88,11 @@
                 line-height: normal;
                 padding-bottom: 8px;
                 a{
-                    color: $primary-p8;
+                    color:  color.$primary-p8;
                     text-decoration: none;
                     &:hover{
                         text-decoration: line-through;
-                        color: $primary-p5;
+                        color:  color.$primary-p5;
                         font-family: 600;
                     }
                 }
@@ -107,7 +107,7 @@
         padding-top: 32px;
         min-height: fit-content;
         .confidential-note{
-            background-color: $color-light-accent-p1;
+            background-color:  color.$color-light-accent-p1;
             padding: 26px 0px;
             h2{
                 width: 90%;
@@ -261,11 +261,11 @@
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
                 a{
                     text-decoration: none;
-                    color: $primary-p7;
+                    color:  color.$primary-p7;
                 }
             }
             ul{
@@ -280,7 +280,7 @@
                     padding-bottom: 1rem;
                     a{
                         text-decoration: none;
-                        color: $primary-p7;
+                        color:  color.$primary-p7;
                     }
                 }
                
@@ -303,7 +303,7 @@
                 .link-template{
                     margin-top: 40px;
                     font-style: italic;
-                    color: $color-grayscale-grey-p7;
+                    color:  color.$color-grayscale-grey-p7;
                 }
             }
 
@@ -379,7 +379,7 @@
             width: 90%;
             margin-left: 5%;
             margin-top: 3.5rem;
-            border-top: 1px solid $primary-p7;
+            border-top: 1px solid  color.$primary-p7;
             padding-top: 36px;
             margin-bottom: -90vh;
             h2{
@@ -397,7 +397,7 @@
                 line-height: normal;
             }
             span{
-                color: $primary-p9;
+                color:  color.$primary-p9;
                 font-family: Indie Flower;
                 font-size: 2rem;
                 font-style: normal;
@@ -412,7 +412,7 @@
     .side-comments{
         flex-basis: 300px; /* Ancho de la columna de comentarios */
         font-family: Indie Flower;
-        color: $primary-p9;
+        color:  color.$primary-p9;
         padding-left: 20px;
         .comment1{
             margin-top: 80px;
@@ -486,16 +486,16 @@
                     line-height: normal;
                     padding-bottom: 8px;
                     a{
-                        color: $primary-p8;
+                        color: color.$primary-p8;
                         text-decoration: none;
                         &:active{
                             text-decoration: underline;
                             font-weight: 600;
-                            color: $primary-p9;
+                            color: color.$primary-p9;
                         }
                         &:hover{
                             text-decoration: line-through;
-                            color: $primary-p7;
+                            color:  color.$primary-p7;
                         }
                     }
                 }
@@ -507,7 +507,7 @@
                 width: 90%;
                 margin-left: 5%;
                 margin-top: 3.5rem;
-                border-top: 1px solid $primary-p7;
+                border-top: 1px solid  color.$primary-p7;
                 padding-top: 36px;
                 margin-bottom: -90vh;
                 h2{
@@ -525,7 +525,7 @@
                     line-height: normal;
                 }
                 span{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 2rem;
                     font-style: normal;
@@ -555,7 +555,7 @@
             padding-top: 32px;
             min-height: fit-content;
             .confidential-note{
-                background-color: $color-light-accent-p1;
+                background-color:  color.$color-light-accent-p1;
                 padding: 26px 0px;
                 h2{
                     width: 90%;
@@ -698,11 +698,11 @@
                         font-style: normal;
                         font-weight: 500;
                         line-height: normal;
-                        color: $primary-p9;
+                        color:  color.$primary-p9;
                     }
                     a{
                         text-decoration: none;
-                        color: $primary-p7;
+                        color:  color.$primary-p7;
                     }
                 }
                 ul{
@@ -717,7 +717,7 @@
                         padding-bottom: 1rem;
                         a{
                             text-decoration: none;
-                            color: $primary-p7;
+                            color:  color.$primary-p7;
                         }
                     }
                    
@@ -740,7 +740,7 @@
                     .link-template{
                         margin-top: 40px;
                         font-style: italic;
-                        color: $color-grayscale-grey-p7;
+                        color:  color.$color-grayscale-grey-p7;
                     }
                 }
     
@@ -818,7 +818,7 @@
     
             .thank{
                 margin-top: 3.5rem;
-                border-top: 1px solid $primary-p7;
+                border-top: 1px solid  color.$primary-p7;
                 padding-top: 36px;
                 margin-bottom: -90vh;
                 h2{
@@ -836,7 +836,7 @@
                     line-height: normal;
                 }
                 span{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 2rem;
                     font-style: normal;

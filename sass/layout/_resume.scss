@@ -1,6 +1,6 @@
-@import "../base/reset";
-@import "../base/color";
-@import "../base/typography";
+@use "../base/reset";
+@use "../base/color";
+@use "../base/typography";
 
 body{
     overflow-x: hidden;
@@ -40,7 +40,7 @@ body{
             flex-basis: 1.3%;
             width: 0.5rem;
             height: 12rem;
-            background: $primary-p7;
+            background:  color.$primary-p7;
         } 
 
         .text{
@@ -53,7 +53,7 @@ body{
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                color: $primary-p9;
+                color:  color.$primary-p9;
             }
             p{
                 font-family: Roboto;
@@ -73,9 +73,9 @@ body{
     padding-right: 80px;
     a{
         text-decoration: none;
-        color: $color-accent-p7;
+        color:  color.$color-accent-p7;
         &:hover{
-            color: $color-accent-p8;
+            color:  color.$color-accent-p8;
             text-decoration: line-through;
         }
     }
@@ -114,7 +114,7 @@ main{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-            color: $color-light-accent-p9;
+            color:  color.$color-light-accent-p9;
             font-style: italic;
         }
         p{
@@ -124,7 +124,7 @@ main{
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
-                color: $primary-p7;
+                color:  color.$primary-p7;
             }
         }
         ul{
@@ -140,7 +140,7 @@ main{
                     font-style: normal;
                     font-weight: 500;
                     line-height: normal;
-                    color: $primary-p7;
+                    color:  color.$primary-p7;
                 }
             }
         }
@@ -153,7 +153,7 @@ main{
     .experience{
         margin-top: 40px;
         padding-top: 40px;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         h3{
             margin-bottom: 20px;
         }
@@ -162,7 +162,7 @@ main{
     .education{
         margin-top: 40px;
         padding-top: 40px;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         h3{
             margin-bottom: 20px;
         }
@@ -171,7 +171,7 @@ main{
     .skill{
         margin-top: 40px;
         padding-top: 40px;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-bottom: 80px;
         h3{
             margin-bottom: 20px;
@@ -200,7 +200,7 @@ main{
 
     .extra{
         display: flex;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 80px;
         .certification{
             width: 50%;
@@ -219,7 +219,7 @@ main{
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         }
@@ -241,7 +241,7 @@ main{
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         }
@@ -277,7 +277,7 @@ main{
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
                 p{
                     font-family: Roboto;
@@ -293,7 +293,7 @@ main{
     .skill{
         margin-top: 40px;
         padding-top: 40px;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-bottom: 80px;
         h3{
             margin-bottom: 20px;
@@ -318,7 +318,7 @@ main{
 
     .extra{
         display: flex;
-        border-top: 1px solid $primary-p4;
+        border-top: 1px solid  color.$primary-p4;
         padding-top: 80px;
         .certification{
             width: 50%;
@@ -337,7 +337,7 @@ main{
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         }
@@ -359,7 +359,7 @@ main{
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         }
