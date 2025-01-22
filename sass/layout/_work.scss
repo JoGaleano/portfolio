@@ -470,9 +470,6 @@
             background-size: cover;
             background-repeat: no-repeat;
             transition: background-image 0.3s ease-in-out;
-            &:hover{
-                background-image: url("../../assets/photo_dos.jpeg");
-            }
         }
         .text{
             width: 23rem;
@@ -506,7 +503,7 @@
     
         #arrow2 {
             bottom: 50vh; /* Ajustar según la posición deseada */
-            left: 0vw; /* Ajustar según la posición deseada */
+            left: 10vw; /* Ajustar según la posición deseada */
             .label{
                 width: 12rem;
             }
@@ -700,28 +697,15 @@
         }
     
         #arrow1 {
-            top: -4vh; /* Ajustar según la posición deseada */
-            right: -5vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 18rem;
-            }
+            display: none;
         }
     
         #arrow2 {
-            bottom: 48vh; /* Ajustar según la posición deseada */
-            left: 0vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 8rem;
-            }
-    
+            display: none;
         }
     
         #arrow3 {
-            bottom: 35vh; /* Ajustar según la posición deseada */
-            left: 30vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 12rem;
-            }
+            display: none;
         }
     
     }
