@@ -1,5 +1,5 @@
-@import "../base/color";
-@import "../base/typography";
+@use "../base/color";
+@use "../base/typography";
 
 #p5-canvas {
     position: fixed; /* Fija el contenedor del canvas en la ventana de visualización */
@@ -29,16 +29,16 @@
 
     .active{
         text-decoration: underline;
-        color: $primary-p7;
+        color:  color.$primary-p7;
         font-weight: 600;
     }
 
     .nav-link{
-        color: $primary-p9;
+        color:  color.$primary-p9;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         &:hover{
             text-decoration: line-through;
-            color: $primary-p5;
+            color:  color.$primary-p5;
         }
     }
 
@@ -69,7 +69,7 @@
             font-family: Advent Pro, Arial, Helvetica, sans-serif;
             font-size: 4rem;
             font-weight: 600;
-            color: var($color-grayscale-grey-dark);
+            color:  color.$color-grayscale-grey-dark;
         }
         p{
             font-family: Roboto;
@@ -77,7 +77,7 @@
             font-style: normal;
             font-weight: 300;
             line-height: normal;
-            color: var($color-grayscale-grey-dark);
+            color:  color.$color-grayscale-grey-dark;
         }
     }
     .arrow-box{
@@ -94,7 +94,7 @@
 
     #arrow2 {
         bottom: 20vh; /* Ajustar según la posición deseada */
-        left: 0vw; /* Ajustar según la posición deseada */
+        left: 8vw; /* Ajustar según la posición deseada */
         .label{
             width: 12rem;
         }
@@ -123,8 +123,8 @@
         align-content: center;
         gap: 18rem;
         margin: 80px 0px;
-        border-top: 1px solid $primary-p2;
-        border-bottom: 1px solid $primary-p2;
+        border-top: 1px solid  color.$primary-p2;
+        border-bottom: 1px solid  color.$primary-p2;
         padding: 40px 0px;
         margin-bottom: 0px;
         .info{
@@ -137,7 +137,7 @@
                 flex-basis: 2%;
                 width: 0.5rem;
                 height: 16.375rem;
-                background: $primary-p7;
+                background:  color.$primary-p7;
             } 
 
             .text{
@@ -150,7 +150,7 @@
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
                 p{
                     font-family: Roboto;
@@ -160,7 +160,7 @@
                     line-height: normal;
                 }
                 a{
-                    color:$primary-p9;
+                    color: color.$primary-p9;
                     text-decoration: none;
                     font-family: Roboto;
                     font-size: 1.25rem;
@@ -169,7 +169,7 @@
                     line-height: normal;
                     &:hover{
                         text-decoration: line-through;
-                        color: $primary-p5;
+                        color:  color.$primary-p5;
                         font-family: 600;
                     }
                 }
@@ -185,7 +185,7 @@
             height: 18rem;
             border-radius: 100%;
             border:3px solid rgba(134, 82, 151, 0.00);
-            background: $color-white;
+            background:  color.$color-white;
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
             img{
                 width: 10rem;
@@ -212,7 +212,7 @@
             height: 18rem;
             border-radius: 100%;
             border:3px solid rgba(134, 82, 151, 0.00);
-            background: $color-white;
+            background:  color.$color-white;
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
             img{
                 width: 90%;
@@ -226,15 +226,15 @@
     .dashboard{
         .info{
             .divider{
-                background: $color-grayscale-grey-p3;
+                background:  color.$color-grayscale-grey-p3;
             } 
 
             .text{
                 h2{
-                    color: $color-grayscale-grey-p4;
+                    color:  color.$color-grayscale-grey-p4;
                 }
                 a{
-                    color:$color-grayscale-grey-p4;
+                    color: color.$color-grayscale-grey-p4;
                     text-decoration: none;
                     font-family: Roboto;
                     font-size: 1.25rem;
@@ -244,7 +244,7 @@
                     cursor: auto;
                     &:hover{
                         text-decoration: none;
-                        color: $color-grayscale-grey-p4;
+                        color:  color.$color-grayscale-grey-p4;
                         font-family: 600;
                     }
                 }
@@ -260,7 +260,7 @@
             height: 18rem;
             border-radius: 100%;
             border:3px solid rgba(134, 82, 151, 0.00);
-            background: $color-white;
+            background:  color.$color-white;
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
             img{
                 width: 10rem;
@@ -274,15 +274,15 @@
     .directory{
         .info{
             .divider{
-                background: $color-grayscale-grey-p3;
+                background:  color.$color-grayscale-grey-p3;
             } 
 
             .text{
                 h2{
-                    color: $color-grayscale-grey-p4;
+                    color:  color.$color-grayscale-grey-p4;
                 }
                 a{
-                    color:$color-grayscale-grey-p4;
+                    color: color.$color-grayscale-grey-p4;
                     text-decoration: none;
                     font-family: Roboto;
                     font-size: 1.25rem;
@@ -292,7 +292,7 @@
                     cursor: auto;
                     &:hover{
                         text-decoration: none;
-                        color: $color-grayscale-grey-p4;
+                        color:  color.$color-grayscale-grey-p4;
                         font-family: 600;
                     }
                 }
@@ -308,7 +308,7 @@
             height: 18rem;
             border-radius: 100%;
             border:3px solid rgba(134, 82, 151, 0.00);
-            background: $color-white;
+            background:  color.$color-white;
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 4px 12px 0px rgba(0, 0, 0, 0.08);
             img{
                 width: 10rem;
@@ -330,7 +330,7 @@
     .worked-text{
         text-align: start;
         h2{
-            color: $color-grayscale-grey-p9;
+            color: color.$color-grayscale-grey-p9;
             font-family: Advent Pro;
             font-size: 1.5rem;
             font-style: normal;
@@ -340,7 +340,7 @@
         }
         .title-work{
             font-family: 600;
-            color: $color-grayscale-grey-p9;
+            color:  color.$color-grayscale-grey-p9;
         }
     }
     
@@ -352,7 +352,7 @@
             justify-content: center;
             border-radius: 0.5rem;
             border: 1px solid rgba(124, 124, 124, 0.20);
-            background: $color-white;
+            background:  color.$color-white;
             width: 15.5rem;
             height: 8rem;
             margin-left: 8px;
@@ -388,7 +388,7 @@
     
         #arrow2 {
             bottom: 15vh; 
-            left: 10vw; 
+            left: 8vw; 
             .label{
                 width: 12rem;
             }
@@ -402,7 +402,7 @@
     #case_study{
         position: relative;
         display: flex;
-        margin-left: 15vw;
+        margin-left: 0vw;
         margin-top: 80px;
     }
 
@@ -414,7 +414,7 @@
         .row{
             .hover-dir{
                 &:hover{
-                    border: 1px solid $primary-p7;
+                    border: 1px solid  color.$primary-p7;
                 }
             }
 
@@ -470,9 +470,6 @@
             background-size: cover;
             background-repeat: no-repeat;
             transition: background-image 0.3s ease-in-out;
-            &:hover{
-                background-image: url("../../assets/photo_dos.jpeg");
-            }
         }
         .text{
             width: 23rem;
@@ -481,7 +478,7 @@
                 font-family: Advent Pro, Arial, Helvetica, sans-serif;
                 font-size: 4rem;
                 font-weight: 600;
-                color: var($color-grayscale-grey-dark);
+                color:  color.$color-grayscale-grey-dark;
             }
             p{
                 font-family: Roboto;
@@ -489,7 +486,7 @@
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
-                color: var($color-grayscale-grey-dark);
+                color:  color.$color-grayscale-grey-dark;
             }
         }
         .arrow-box{
@@ -506,7 +503,7 @@
     
         #arrow2 {
             bottom: 50vh; /* Ajustar según la posición deseada */
-            left: 0vw; /* Ajustar según la posición deseada */
+            left: 10vw; /* Ajustar según la posición deseada */
             .label{
                 width: 12rem;
             }
@@ -535,8 +532,8 @@
             align-content: center;
             gap: 18rem;
             margin: 80px 0px;
-            border-top: 1px solid $primary-p2;
-            border-bottom: 1px solid $primary-p2;
+            border-top: 1px solid  color.$primary-p2;
+            border-bottom: 1px solid  color.$primary-p2;
             padding: 40px 0px;
             .info{
                 display: flex;
@@ -545,7 +542,7 @@
                     flex-basis: 2%;
                     width: 0.5rem;
                     height: 16.375rem;
-                    background: $primary-p7;
+                    background:  color.$primary-p7;
                 } 
     
                 .text{
@@ -558,7 +555,7 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
-                        color: $primary-p9;
+                        color:  color.$primary-p9;
                     }
                     p{
                         font-family: Roboto;
@@ -568,7 +565,7 @@
                         line-height: normal;
                     }
                     a{
-                        color:$primary-p9;
+                        color: color.$primary-p9;
                         text-decoration: none;
                         font-family: Roboto;
                         font-size: 1.25rem;
@@ -595,7 +592,7 @@
         align-items: center;
         margin-bottom: 80px;
         h2{
-            color: $color-grayscale-grey-dark;
+            color:  color.$color-grayscale-grey-dark;
             font-family: Advent Pro;
             font-size: 1.5rem;
             font-style: normal;
@@ -611,7 +608,7 @@
                 justify-content: center;
                 border-radius: 0.5rem;
                 border: 1px solid rgba(124, 124, 124, 0.20);
-                background: $color-white;
+                background:  color.$color-white;
                 width: 15rem;
                 height: 8rem;
                 margin-left: 8px;
@@ -684,7 +681,7 @@
                 font-family: Advent Pro, Arial, Helvetica, sans-serif;
                 font-size: 4rem;
                 font-weight: 600;
-                color: var($color-grayscale-grey-dark);
+                color:  color.$color-grayscale-grey-dark;
             }
             p{
                 font-family: Roboto;
@@ -692,7 +689,7 @@
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
-                color: var($color-grayscale-grey-dark);
+                color:  color.$color-grayscale-grey-dark;
             }
         }
         .arrow-box{
@@ -700,28 +697,15 @@
         }
     
         #arrow1 {
-            top: -4vh; /* Ajustar según la posición deseada */
-            right: -5vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 18rem;
-            }
+            display: none;
         }
     
         #arrow2 {
-            bottom: 48vh; /* Ajustar según la posición deseada */
-            left: 0vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 8rem;
-            }
-    
+            display: none;
         }
     
         #arrow3 {
-            bottom: 35vh; /* Ajustar según la posición deseada */
-            left: 30vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 12rem;
-            }
+            display: none;
         }
     
     }
@@ -738,8 +722,8 @@
             align-content: center;
             gap: 18rem;
             margin: 80px 0px;
-            border-top: 1px solid $primary-p2;
-            border-bottom: 1px solid $primary-p2;
+            border-top: 1px solid  color.$primary-p2;
+            border-bottom: 1px solid  color.$primary-p2;
             padding: 40px 0px;
             padding-bottom: 20px;
             margin-bottom: 0px;
@@ -751,7 +735,7 @@
                     flex-basis: 2%;
                     width: 0.5rem;
                     height: 16.375rem;
-                    background: $primary-p7;
+                    background:  color.$primary-p7;
                 } 
     
                 .text{
@@ -764,7 +748,7 @@
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
-                        color: $primary-p9;
+                        color:  color.$primary-p9;
                     }
                     p{
                         font-family: Roboto;
@@ -774,7 +758,7 @@
                         line-height: normal;
                     }
                     a{
-                        color:$primary-p9;
+                        color: color.$primary-p9;
                         text-decoration: none;
                         font-family: Roboto;
                         font-size: 1.25rem;
@@ -807,15 +791,15 @@
     .dashboard{
         .info{
             .divider{
-                background: $color-grayscale-grey-p3;
+                background:  color.$color-grayscale-grey-p3;
             } 
 
             .text{
                 h2{
-                    color: $color-grayscale-grey-p4;
+                    color:  color.$color-grayscale-grey-p4;
                 }
                 a{
-                    color:$color-grayscale-grey-p4;
+                    color: color.$color-grayscale-grey-p4;
                     text-decoration: none;
                     font-family: Roboto;
                     font-size: 1.25rem;
@@ -825,7 +809,7 @@
                     cursor: auto;
                     &:hover{
                         text-decoration: none;
-                        color: $color-grayscale-grey-p4;
+                        color:  color.$color-grayscale-grey-p4;
                         font-family: 600;
                     }
                 }
@@ -837,15 +821,15 @@
     .directory{
         .info{
             .divider{
-                background: $color-grayscale-grey-p3;
+                background:  color.$color-grayscale-grey-p3;
             } 
 
             .text{
                 h2{
-                    color: $color-grayscale-grey-p4;
+                    color:  color.$color-grayscale-grey-p4;
                 }
                 a{
-                    color:$color-grayscale-grey-p4;
+                    color: color.$color-grayscale-grey-p4;
                     text-decoration: none;
                     font-family: Roboto;
                     font-size: 1.25rem;
@@ -855,7 +839,7 @@
                     cursor: auto;
                     &:hover{
                         text-decoration: none;
-                        color: $color-grayscale-grey-p4;
+                        color:  color.$color-grayscale-grey-p4;
                         font-family: 600;
                     }
                 }
@@ -873,7 +857,7 @@
         margin-bottom: 80px;
         margin-top: 80px;
         h2{
-            color: $color-grayscale-grey-dark;
+            color:  color.$color-grayscale-grey-dark;
             font-family: Advent Pro;
             font-size: 1.5rem;
             font-style: normal;
@@ -889,7 +873,7 @@
                 justify-content: center;
                 border-radius: 0.5rem;
                 border: 1px solid rgba(124, 124, 124, 0.20);
-                background: $color-white;
+                background:  color.$color-white;
                 width: 15rem;
                 height: 8rem;
                 margin-left: 8px;

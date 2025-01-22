@@ -1,9 +1,13 @@
-@import "../base/reset";
-@import "../base/color";
-@import "../base/typography";
+@use "../base/reset";
+@use "../base/color";
+@use "../base/typography";
 
 body{
     overflow-x: hidden;
+    .link{
+        color: color.$primary-p7;
+        font-weight: 600;
+    }
 }
 
 #p5-canvas {
@@ -41,7 +45,7 @@ body{
             flex-basis: 1.5%;
             width: 0.5rem;
             height: 16.375rem;
-            background: $primary-p7;
+            background:  color.$primary-p7;
         } 
 
         .text{
@@ -54,7 +58,7 @@ body{
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
-                color: $primary-p9;
+                color:  color.$primary-p9;
             }
         }
     }
@@ -78,7 +82,7 @@ body{
             line-height: normal;
         }
         span{
-            color: $primary-p9;
+            color:  color.$primary-p9;
             font-weight: 600;
             
         }
@@ -99,10 +103,10 @@ body{
     }
 
     .thank{
-        border-top: 1px solid $primary-p7;
+        border-top: 1px solid  color.$primary-p7;
         padding-top: 36px;
         .jo{
-                color: $primary-p9;
+                color:  color.$primary-p9;
                 font-family: Indie Flower;
                 font-size: 2rem;
                 font-style: normal;
@@ -117,10 +121,10 @@ body{
     main{
 
         .thank{
-            border-top: 1px solid $primary-p7;
+            border-top: 1px solid   color.$primary-p7;
             padding-top: 36px;
             .jo{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 2rem;
                     font-style: normal;
@@ -157,7 +161,7 @@ body{
                 flex-basis: 1.5%;
                 width: 0.5rem;
                 height: 16.375rem;
-                background: $primary-p7;
+                background:  color.$primary-p7;
             } 
     
             .text{
@@ -170,7 +174,7 @@ body{
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                 }
             }
         }
@@ -193,7 +197,7 @@ body{
                 line-height: normal;
             }
             span{
-                color: $primary-p9;
+                color:  color.$primary-p9;
                 font-weight: 600;
                 
             }
@@ -214,10 +218,10 @@ body{
         }
     
         .thank{
-            border-top: 1px solid $primary-p7;
+            border-top: 1px solid  color.$primary-p7;
             padding-top: 36px;
             .jo{
-                    color: $primary-p9;
+                    color:  color.$primary-p9;
                     font-family: Indie Flower;
                     font-size: 1.8rem;
                     font-style: normal;

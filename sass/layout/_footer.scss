@@ -1,8 +1,8 @@
-@import "../base/color";
-@import "../base/typography";
+@use "../base/color";
+@use "../base/typography";
 
 #footer{
-    background-color: $color-bg-blur;
+    background-color:  color.$color-bg-blur;
     backdrop-filter: blur(1px);
     z-index: 10;
     display: flex;
@@ -22,7 +22,7 @@
 
 @media (max-width:767px){
     #footer{
-        background-color: $color-bg-blur;
+        background-color:  color.$color-bg-blur;
         backdrop-filter: blur(1px);
         z-index: 10;
         display: flex;
