@@ -1148,7 +1148,7 @@ main .extra .book div p {
   position: relative;
   border: 0.5px solid #E6B6F5;
 }
-#presentation .profile_photo video {
+#presentation .profile_photo .video-profile {
   width: 55%;
   height: 100%;
   object-fit: cover;
@@ -1156,6 +1156,12 @@ main .extra .book div p {
   margin-top: 2%;
   transform: translate(40%, 0%);
   transition: opacity 0.3s ease;
+}
+#presentation .profile_photo .fallback-profile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 #presentation .text {
   width: 23rem;
