@@ -1148,7 +1148,7 @@ main .extra .book div p {
   position: relative;
   border: 0.5px solid #E6B6F5;
 }
-#presentation .profile_photo .video-profile {
+#presentation .profile_photo video {
   width: 55%;
   height: 100%;
   object-fit: cover;
@@ -1159,9 +1159,6 @@ main .extra .book div p {
 }
 #presentation .profile_photo .fallback-profile {
   display: none;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 #presentation .text {
   width: 23rem;
@@ -1414,20 +1411,6 @@ main .extra .book div p {
   #presentation .arrow-box {
     position: absolute;
   }
-  #presentation #arrow1 {
-    top: -7vh;
-    right: 30vw;
-  }
-  #presentation #arrow1 .label {
-    width: 25rem;
-  }
-  #presentation #arrow2 {
-    bottom: 15vh;
-    left: 8vw;
-  }
-  #presentation #arrow2 .label {
-    width: 12rem;
-  }
   #case_study {
     position: relative;
     display: flex;
@@ -1659,13 +1642,14 @@ main .extra .book div p {
     border: 0.5px solid #E6B6F5;
   }
   #presentation .profile_photo video {
-    width: 60vw;
+    display: none;
+  }
+  #presentation .profile_photo .fallback-profile {
+    display: block;
+    width: 45vw;
     height: 100%;
     object-fit: cover;
-    border-radius: 0px;
-    margin-top: 2%;
-    transform: translate(20%, 0%);
-    transition: opacity 0.3s ease;
+    transform: translate(45%, 0%);
   }
   #presentation .text {
     width: 16rem;

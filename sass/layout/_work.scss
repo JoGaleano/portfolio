@@ -63,7 +63,7 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         position: relative;
         border: 0.5px solid color.$primary-p3;
-        .video-profile{
+        video{
             width: 55%;
             height: 100%;
             object-fit: cover;
@@ -74,9 +74,6 @@
         }
         .fallback-profile {
             display: none;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
     }
     .text{
@@ -372,23 +369,6 @@
             position: absolute;
         }
     
-        #arrow1 {
-            top: -7vh; 
-            right: 30vw; 
-            .label{
-                width: 25rem;
-            }
-        }
-    
-        #arrow2 {
-            bottom: 15vh; 
-            left: 8vw; 
-            .label{
-                width: 12rem;
-            }
-    
-        }
-    
     }
 
    
@@ -654,13 +634,14 @@
             position: relative;
             border: 0.5px solid color.$primary-p3;
             video{
-                width: 60vw;
+                display: none;
+            }
+            .fallback-profile {
+                display: block;
+                width: 45vw;
                 height: 100%;
                 object-fit: cover;
-                border-radius: 0px;
-                margin-top: 2%;
-                transform: translate(+20%, 0%);
-                transition: opacity 0.3s ease;
+                transform: translate(+45%, 0%);
             }
         }
         .text{
