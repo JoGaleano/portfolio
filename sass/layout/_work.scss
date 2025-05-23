@@ -15,8 +15,8 @@
 #nav{
     position: fixed;
     width: 100vw;
-    background-color: rgba(243, 215, 252, 0.08) !important;
-    box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+    background-color: rgba(215, 233, 252, 0.08) !important;
+    box-shadow: 0px 4px 4px 0px rgba(45, 71, 93, 0.08);
     backdrop-filter: blur(1px);
     z-index: 10;
 
@@ -632,7 +632,7 @@
             background-repeat: no-repeat;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             position: relative;
-            border: 0.5px solid color.$primary-p3;
+            border: 0.5px solid color.$color-dark-primary-p3;
             video{
                 display: none;
             }

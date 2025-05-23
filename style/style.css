@@ -41,7 +41,7 @@ body {
   overflow-x: hidden;
 }
 body .link {
-  color: #865297;
+  color: #667F9A;
   font-weight: 600;
 }
 
@@ -81,7 +81,7 @@ body .link {
   flex-basis: 1.5%;
   width: 0.5rem;
   height: 16.375rem;
-  background: #865297;
+  background: #667F9A;
 }
 .header-about .info .text {
   width: 40rem;
@@ -94,7 +94,7 @@ body .link {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 
 .main-about div {
@@ -115,7 +115,7 @@ body .link {
   line-height: normal;
 }
 .main-about div span {
-  color: #512D5D;
+  color: #3F5267;
   font-weight: 600;
 }
 .main-about .moodboard {
@@ -132,11 +132,11 @@ body .link {
   background-repeat: no-repeat;
 }
 .main-about .thank {
-  border-top: 1px solid #865297;
+  border-top: 1px solid #667F9A;
   padding-top: 36px;
 }
 .main-about .thank .jo {
-  color: #512D5D;
+  color: #3F5267;
   font-family: Indie Flower;
   font-size: 2rem;
   font-style: normal;
@@ -147,11 +147,11 @@ body .link {
 
 @media (min-width: 1441px) {
   main .thank {
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
   }
   main .thank .jo {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 2rem;
     font-style: normal;
@@ -187,7 +187,7 @@ body .link {
     flex-basis: 1.5%;
     width: 0.5rem;
     height: 16.375rem;
-    background: #865297;
+    background: #667F9A;
   }
   .header-about .info .text {
     width: 18rem;
@@ -200,7 +200,7 @@ body .link {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .main-about div {
     margin-top: 60px;
@@ -220,7 +220,7 @@ body .link {
     line-height: normal;
   }
   .main-about div span {
-    color: #512D5D;
+    color: #3F5267;
     font-weight: 600;
   }
   .main-about .moodboard {
@@ -237,11 +237,11 @@ body .link {
     background-repeat: no-repeat;
   }
   .main-about .thank {
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
   }
   .main-about .thank .jo {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 1.8rem;
     font-style: normal;
@@ -251,7 +251,7 @@ body .link {
   }
 }
 #footer {
-  background-color: rgba(243, 215, 252, 0.08);
+  background-color: rgba(215, 238, 252, 0.08);
   backdrop-filter: blur(2px);
   z-index: 10;
   display: flex;
@@ -269,7 +269,7 @@ body .link {
 
 @media (max-width: 767px) {
   #footer {
-    background-color: rgba(243, 215, 252, 0.08);
+    background-color: rgba(215, 238, 252, 0.08);
     backdrop-filter: blur(1px);
     z-index: 10;
     display: flex;
@@ -333,7 +333,7 @@ body {
   flex-basis: 1.3%;
   width: 0.5rem;
   height: 12rem;
-  background: #865297;
+  background: #667F9A;
 }
 .header-resume .info .text {
   width: 40rem;
@@ -346,7 +346,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 .header-resume .info .text p {
   font-family: Roboto;
@@ -410,7 +410,7 @@ main section p span {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: #865297;
+  color: #667F9A;
 }
 main section ul {
   margin: 0;
@@ -427,7 +427,7 @@ main section ul li span {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: #865297;
+  color: #667F9A;
 }
 main .about {
   margin-top: 60px;
@@ -435,7 +435,7 @@ main .about {
 main .experience {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
 }
 main .experience h3 {
   margin-bottom: 20px;
@@ -443,7 +443,7 @@ main .experience h3 {
 main .education {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
 }
 main .education h3 {
   margin-bottom: 20px;
@@ -451,7 +451,7 @@ main .education h3 {
 main .skill {
   margin-top: 40px;
   padding-top: 40px;
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-bottom: 80px;
 }
 main .skill h3 {
@@ -475,7 +475,7 @@ main .skill .learning {
 }
 main .extra {
   display: flex;
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-top: 80px;
 }
 main .extra .certification {
@@ -495,7 +495,7 @@ main .extra .certification div p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 main .extra .book {
   width: 50%;
@@ -514,7 +514,7 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 
 @media (min-width: 1440px) {
@@ -539,7 +539,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .header-resume .info .text p {
     font-family: Roboto;
@@ -551,7 +551,7 @@ main .extra .book div p {
   .skill {
     margin-top: 40px;
     padding-top: 40px;
-    border-top: 1px solid #D996EE;
+    border-top: 1px solid #A9C6E6;
     padding-bottom: 80px;
   }
   .skill h3 {
@@ -575,7 +575,7 @@ main .extra .book div p {
   }
   .extra {
     display: flex;
-    border-top: 1px solid #D996EE;
+    border-top: 1px solid #A9C6E6;
     padding-top: 80px;
   }
   .extra .certification {
@@ -595,7 +595,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .extra .book {
     width: 50%;
@@ -614,7 +614,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
 }
 .back {
@@ -622,7 +622,7 @@ main .extra .book div p {
   top: 120px;
   margin-top: 120px;
   margin-left: 38px;
-  color: #512D5D;
+  color: #3F5267;
   font-family: Roboto;
   font-size: 1rem;
   font-style: normal;
@@ -644,7 +644,7 @@ main .extra .book div p {
   align-items: center;
   justify-content: center;
   gap: 18rem;
-  border-bottom: 1px solid #F3D7FC;
+  border-bottom: 1px solid #DDEDFF;
   padding: 40px 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -660,7 +660,7 @@ main .extra .book div p {
   flex-basis: 2%;
   width: 0.5rem;
   height: 16.375rem;
-  background: #865297;
+  background: #667F9A;
 }
 .header .info .text {
   width: 24rem;
@@ -673,7 +673,7 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 .header .info .text p {
   font-family: Roboto;
@@ -720,7 +720,7 @@ main .extra .book div p {
   font-size: 1rem;
 }
 .main-content .timeline {
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-top: 20px;
 }
 .main-content .timeline img {
@@ -729,7 +729,7 @@ main .extra .book div p {
   width: 100%;
 }
 .main-content .problem {
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-top: 20px;
 }
 .main-content .problem ul li {
@@ -741,12 +741,12 @@ main .extra .book div p {
   padding-bottom: 8px;
 }
 .main-content .problem ul li a {
-  color: #6B3F7A;
+  color: #526880;
   text-decoration: none;
 }
 .main-content .problem ul li a:hover {
   text-decoration: line-through;
-  color: #BD7ED1;
+  color: #92AECD;
   font-family: 600;
 }
 .main-content .problem img {
@@ -755,11 +755,11 @@ main .extra .book div p {
   width: 100%;
 }
 .main-content .team {
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-top: 20px;
 }
 .main-content .test_iteration {
-  border-top: 1px solid #D996EE;
+  border-top: 1px solid #A9C6E6;
   padding-top: 20px;
 }
 .main-content .test_iteration img {
@@ -781,7 +781,7 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 .main-content span {
   font-weight: 400;
@@ -791,7 +791,7 @@ main .extra .book div p {
 .side-comments {
   flex-basis: 300px; /* Ancho de la columna de comentarios */
   font-family: Indie Flower;
-  color: #512D5D;
+  color: #3F5267;
   padding-left: 20px;
 }
 .side-comments .comment01 {
@@ -810,7 +810,7 @@ main .extra .book div p {
   margin-top: 800px;
 }
 .side-comments .comment05 a {
-  color: #865297;
+  color: #667F9A;
 }
 .side-comments .comment06 {
   margin-top: 2500px;
@@ -849,7 +849,7 @@ main .extra .book div p {
     align-items: center;
     justify-content: center;
     gap: 18rem;
-    border-bottom: 1px solid #F3D7FC;
+    border-bottom: 1px solid #DDEDFF;
     padding: 40px 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -867,7 +867,7 @@ main .extra .book div p {
     flex-basis: 2%;
     width: 1rem;
     height: 16.375rem;
-    background: #865297;
+    background: #667F9A;
   }
   .header .info .text {
     width: 8rem;
@@ -880,7 +880,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .header .info .text p {
     font-family: Roboto;
@@ -953,7 +953,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .container .main-content span {
     font-weight: 400;
@@ -961,7 +961,7 @@ main .extra .book div p {
   }
   .container .main-content .thank-flobi {
     margin-top: 3.5rem;
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
     margin-bottom: -90vh;
   }
@@ -980,7 +980,7 @@ main .extra .book div p {
     line-height: normal;
   }
   .container .main-content .thank-flobi span {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 1.5rem !important;
     font-style: normal;
@@ -1053,7 +1053,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .container .main-content span {
     font-weight: 400;
@@ -1061,7 +1061,7 @@ main .extra .book div p {
   }
   .container .main-content .thank-flobi {
     margin-top: 3.5rem;
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
     margin-bottom: -90vh;
   }
@@ -1080,7 +1080,7 @@ main .extra .book div p {
     line-height: normal;
   }
   .container .main-content .thank-flobi span {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 1.5rem !important;
     font-style: normal;
@@ -1102,8 +1102,8 @@ main .extra .book div p {
 #nav {
   position: fixed;
   width: 100vw;
-  background-color: rgba(243, 215, 252, 0.08) !important;
-  box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
+  background-color: rgba(215, 233, 252, 0.08) !important;
+  box-shadow: 0px 4px 4px 0px rgba(45, 71, 93, 0.08);
   backdrop-filter: blur(1px);
   z-index: 10;
 }
@@ -1115,16 +1115,16 @@ main .extra .book div p {
 }
 #nav .active {
   text-decoration: underline;
-  color: #865297;
+  color: #667F9A;
   font-weight: 600;
 }
 #nav .nav-link {
-  color: #512D5D;
+  color: #3F5267;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 #nav .nav-link:hover {
   text-decoration: line-through;
-  color: #BD7ED1;
+  color: #92AECD;
 }
 
 #presentation {
@@ -1146,7 +1146,7 @@ main .extra .book div p {
   background-repeat: no-repeat;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
-  border: 0.5px solid #E6B6F5;
+  border: 0.5px solid #C2DFFF;
 }
 #presentation .profile_photo video {
   width: 55%;
@@ -1195,8 +1195,8 @@ main .extra .book div p {
   align-content: center;
   gap: 18rem;
   margin: 80px 0px;
-  border-top: 1px solid #F3D7FC;
-  border-bottom: 1px solid #F3D7FC;
+  border-top: 1px solid #DDEDFF;
+  border-bottom: 1px solid #DDEDFF;
   padding: 40px 0px;
   margin-bottom: 0px;
 }
@@ -1211,7 +1211,7 @@ main .extra .book div p {
   flex-basis: 2%;
   width: 0.5rem;
   height: 16.375rem;
-  background: #865297;
+  background: #667F9A;
 }
 #case_study .formato .info .text {
   width: 24rem;
@@ -1224,7 +1224,7 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 #case_study .formato .info .text p {
   font-family: Roboto;
@@ -1234,7 +1234,7 @@ main .extra .book div p {
   line-height: normal;
 }
 #case_study .formato .info .text a {
-  color: #512D5D;
+  color: #3F5267;
   text-decoration: none;
   font-family: Roboto;
   font-size: 1.25rem;
@@ -1244,7 +1244,7 @@ main .extra .book div p {
 }
 #case_study .formato .info .text a:hover {
   text-decoration: line-through;
-  color: #BD7ED1;
+  color: #92AECD;
   font-family: 600;
 }
 #case_study .formato .portada {
@@ -1420,7 +1420,7 @@ main .extra .book div p {
 }
 @media (min-width: 1200px) {
   #worked .row .hover-dir:hover {
-    border: 1px solid #865297;
+    border: 1px solid #667F9A;
   }
 }
 @media (min-width: 100px) {
@@ -1466,7 +1466,7 @@ main .extra .book div p {
     background-repeat: no-repeat;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    border: 0.5px solid #E6B6F5;
+    border: 0.5px solid #C2DFFF;
   }
   #presentation .profile_photo video {
     width: 25vw;
@@ -1511,8 +1511,8 @@ main .extra .book div p {
     align-content: center;
     gap: 18rem;
     margin: 80px 0px;
-    border-top: 1px solid #F3D7FC;
-    border-bottom: 1px solid #F3D7FC;
+    border-top: 1px solid #DDEDFF;
+    border-bottom: 1px solid #DDEDFF;
     padding: 40px 0px;
   }
   #case_study .formato .info {
@@ -1523,7 +1523,7 @@ main .extra .book div p {
     flex-basis: 2%;
     width: 0.5rem;
     height: 16.375rem;
-    background: #865297;
+    background: #667F9A;
   }
   #case_study .formato .info .text {
     width: 24rem;
@@ -1536,7 +1536,7 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   #case_study .formato .info .text p {
     font-family: Roboto;
@@ -1546,7 +1546,7 @@ main .extra .book div p {
     line-height: normal;
   }
   #case_study .formato .info .text a {
-    color: #512D5D;
+    color: #3F5267;
     text-decoration: none;
     font-family: Roboto;
     font-size: 1.25rem;
@@ -1639,7 +1639,7 @@ main .extra .book div p {
     background-repeat: no-repeat;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    border: 0.5px solid #E6B6F5;
+    border: 0.5px solid #FBEAE6;
   }
   #presentation .profile_photo video {
     display: none;
@@ -1686,8 +1686,8 @@ main .extra .book div p {
     align-content: center;
     gap: 18rem;
     margin: 80px 0px;
-    border-top: 1px solid #F3D7FC;
-    border-bottom: 1px solid #F3D7FC;
+    border-top: 1px solid #DDEDFF;
+    border-bottom: 1px solid #DDEDFF;
     padding: 40px 0px;
     padding-bottom: 20px;
     margin-bottom: 0px;
@@ -1701,7 +1701,7 @@ main .extra .book div p {
     flex-basis: 2%;
     width: 0.5rem;
     height: 16.375rem;
-    background: #865297;
+    background: #667F9A;
   }
   #case_study .formato .info .text {
     width: 100%;
@@ -1809,7 +1809,7 @@ main .extra .book div p {
   top: 120px;
   margin-top: 120px;
   margin-left: 38px;
-  color: #512D5D;
+  color: #3F5267;
   font-family: Roboto;
   font-size: 1rem;
   font-style: normal;
@@ -1831,7 +1831,7 @@ main .extra .book div p {
   align-items: center;
   justify-content: center;
   gap: 18rem;
-  border-bottom: 1px solid #F3D7FC;
+  border-bottom: 1px solid #DDEDFF;
   padding: 40px 0px;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -1847,7 +1847,7 @@ main .extra .book div p {
   flex-basis: 2%;
   width: 0.5rem;
   height: 16.375rem;
-  background: #865297;
+  background: #667F9A;
 }
 .header .info .text {
   width: 24rem;
@@ -1860,7 +1860,7 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 .header .info .text p {
   font-family: Roboto;
@@ -1890,12 +1890,12 @@ main .extra .book div p {
   padding-bottom: 8px;
 }
 .container .menu ul li a {
-  color: #6B3F7A;
+  color: #526880;
   text-decoration: none;
 }
 .container .menu ul li a:hover {
   text-decoration: line-through;
-  color: #BD7ED1;
+  color: #92AECD;
   font-family: 600;
 }
 .container .main-content {
@@ -2054,11 +2054,11 @@ main .extra .book div p {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  color: #512D5D;
+  color: #3F5267;
 }
 .container .main-content .Process p a {
   text-decoration: none;
-  color: #865297;
+  color: #667F9A;
 }
 .container .main-content .Process ul li {
   display: flex;
@@ -2072,7 +2072,7 @@ main .extra .book div p {
 }
 .container .main-content .Process ul li a {
   text-decoration: none;
-  color: #865297;
+  color: #667F9A;
 }
 .container .main-content .Process h4 {
   margin-top: 2.5rem;
@@ -2149,7 +2149,7 @@ main .extra .book div p {
   width: 90%;
   margin-left: 5%;
   margin-top: 3.5rem;
-  border-top: 1px solid #865297;
+  border-top: 1px solid #667F9A;
   padding-top: 36px;
   margin-bottom: -90vh;
 }
@@ -2168,7 +2168,7 @@ main .extra .book div p {
   line-height: normal;
 }
 .container .main-content .thank span {
-  color: #512D5D;
+  color: #3F5267;
   font-family: Indie Flower;
   font-size: 2rem;
   font-style: normal;
@@ -2179,7 +2179,7 @@ main .extra .book div p {
 .container .side-comments {
   flex-basis: 300px; /* Ancho de la columna de comentarios */
   font-family: Indie Flower;
-  color: #512D5D;
+  color: #3F5267;
   padding-left: 20px;
 }
 .container .side-comments .comment1 {
@@ -2251,23 +2251,23 @@ main .extra .book div p {
     padding-bottom: 8px;
   }
   .container .menu ul li a {
-    color: #6B3F7A;
+    color: #526880;
     text-decoration: none;
   }
   .container .menu ul li a:active {
     text-decoration: underline;
     font-weight: 600;
-    color: #512D5D;
+    color: #3F5267;
   }
   .container .menu ul li a:hover {
     text-decoration: line-through;
-    color: #865297;
+    color: #667F9A;
   }
   .container .main-content .thank {
     width: 90%;
     margin-left: 5%;
     margin-top: 3.5rem;
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
     margin-bottom: -90vh;
   }
@@ -2286,7 +2286,7 @@ main .extra .book div p {
     line-height: normal;
   }
   .container .main-content .thank span {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 2rem;
     font-style: normal;
@@ -2447,11 +2447,11 @@ main .extra .book div p {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    color: #512D5D;
+    color: #3F5267;
   }
   .container .main-content .Process p a {
     text-decoration: none;
-    color: #865297;
+    color: #667F9A;
   }
   .container .main-content .Process ul ol {
     display: flex;
@@ -2465,7 +2465,7 @@ main .extra .book div p {
   }
   .container .main-content .Process ul ol a {
     text-decoration: none;
-    color: #865297;
+    color: #667F9A;
   }
   .container .main-content .Process h4 {
     margin-top: 2.5rem;
@@ -2541,7 +2541,7 @@ main .extra .book div p {
   }
   .container .main-content .thank {
     margin-top: 3.5rem;
-    border-top: 1px solid #865297;
+    border-top: 1px solid #667F9A;
     padding-top: 36px;
     margin-bottom: -90vh;
   }
@@ -2560,7 +2560,7 @@ main .extra .book div p {
     line-height: normal;
   }
   .container .main-content .thank span {
-    color: #512D5D;
+    color: #3F5267;
     font-family: Indie Flower;
     font-size: 2rem;
     font-style: normal;
