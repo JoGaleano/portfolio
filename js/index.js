@@ -18,7 +18,7 @@ function draw() {
     for (let j = i + 1; j < nodes.length; j++) {
       let d = dist(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
       if (d < maxDistance) {
-        stroke('#86529715');
+        stroke('rgba(82, 129, 151, 0.0824)');
         line(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
       }
     }
@@ -41,7 +41,7 @@ class Node {
 
   display() {
     noStroke();
-    fill('#86529752');
+    fill('rgba(82, 118, 151, 0.3216)');
     ellipse(this.x, this.y, this.diameter, this.diameter);
   }
 
