@@ -252,7 +252,7 @@ body .link {
 }
 #footer {
   background-color: rgba(243, 215, 252, 0.08);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -277,9 +277,13 @@ body .link {
     justify-content: center;
     padding: 20px 80px;
     align-items: center;
+    width: 100vw;
+    overflow: hidden;
     box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
   }
   #footer .rrss {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
   }
   #footer .rrss a {
@@ -1137,10 +1141,21 @@ main .extra .book div p {
   width: 25rem;
   height: 25rem;
   border-radius: 12.5rem 0rem;
-  background-image: url("../../assets/profile.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 0.5px solid #E6B6F5;
+}
+#presentation .profile_photo video {
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  margin-top: 2%;
+  transform: translate(40%, 0%);
+  transition: opacity 0.3s ease;
 }
 #presentation .text {
   width: 23rem;
@@ -1162,27 +1177,6 @@ main .extra .book div p {
 }
 #presentation .arrow-box {
   position: absolute;
-}
-#presentation #arrow1 {
-  top: -7vh; /* Ajustar según la posición deseada */
-  right: 20vw; /* Ajustar según la posición deseada */
-}
-#presentation #arrow1 .label {
-  width: 25rem;
-}
-#presentation #arrow2 {
-  bottom: 20vh; /* Ajustar según la posición deseada */
-  left: 8vw; /* Ajustar según la posición deseada */
-}
-#presentation #arrow2 .label {
-  width: 12rem;
-}
-#presentation #arrow3 {
-  bottom: -10vh; /* Ajustar según la posición deseada */
-  left: 30vw; /* Ajustar según la posición deseada */
-}
-#presentation #arrow3 .label {
-  width: 20rem;
 }
 
 #case_study {
@@ -1457,7 +1451,6 @@ main .extra .book div p {
   }
   #nav {
     position: fixed;
-    width: 100vw;
     background-color: rgba(243, 215, 252, 0.08) !important;
     box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
     backdrop-filter: blur(1px);
@@ -1475,14 +1468,25 @@ main .extra .book div p {
     margin-top: 20vh;
   }
   #presentation .profile_photo {
-    width: 25rem;
+    background-color: none;
+    width: 80vw;
     height: 25rem;
     border-radius: 12.5rem 0rem;
-    background-image: url("../../assets/profile.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-image 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: 0.5px solid #E6B6F5;
+  }
+  #presentation .profile_photo video {
+    width: 25vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-top: 2%;
+    transform: translate(90%, 0%);
+    transition: opacity 0.3s ease;
   }
   #presentation .text {
     width: 23rem;
@@ -1504,27 +1508,6 @@ main .extra .book div p {
   }
   #presentation .arrow-box {
     position: absolute;
-  }
-  #presentation #arrow1 {
-    top: -8vh; /* Ajustar según la posición deseada */
-    right: -5vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow1 .label {
-    width: 25rem;
-  }
-  #presentation #arrow2 {
-    bottom: 50vh; /* Ajustar según la posición deseada */
-    left: 10vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow2 .label {
-    width: 12rem;
-  }
-  #presentation #arrow3 {
-    bottom: 30vh; /* Ajustar según la posición deseada */
-    left: 50vw; /* Ajustar según la posición deseada */
-  }
-  #presentation #arrow3 .label {
-    width: 16rem;
   }
   #case_study {
     position: relative;
@@ -1635,7 +1618,6 @@ main .extra .book div p {
   }
   #nav {
     position: fixed;
-    width: 100vw;
     background-color: rgba(243, 215, 252, 0.08) !important;
     box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
     backdrop-filter: blur(1px);
@@ -1655,21 +1637,32 @@ main .extra .book div p {
     flex-direction: column;
     gap: var(--Spacing-xxl, 3rem);
     width: auto;
-    height: 40rem;
+    height: 45rem;
     margin-top: 20vh;
   }
   #presentation .profile_photo {
-    width: 20rem;
-    height: 20rem;
+    background-color: none;
+    width: 80vw;
+    height: 25rem;
     border-radius: 12.5rem 0rem;
-    background-image: url("../../assets/profile.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-image 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: 0.5px solid #E6B6F5;
+  }
+  #presentation .profile_photo video {
+    width: 60vw;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    margin-top: 2%;
+    transform: translate(20%, 0%);
+    transition: opacity 0.3s ease;
   }
   #presentation .text {
-    width: 20rem;
+    width: 16rem;
     height: auto;
     padding-top: 40px;
   }
@@ -1681,7 +1674,7 @@ main .extra .book div p {
   }
   #presentation .text p {
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -1689,15 +1682,6 @@ main .extra .book div p {
   }
   #presentation .arrow-box {
     position: absolute;
-  }
-  #presentation #arrow1 {
-    display: none;
-  }
-  #presentation #arrow2 {
-    display: none;
-  }
-  #presentation #arrow3 {
-    display: none;
   }
   #case_study {
     position: relative;
@@ -1730,44 +1714,24 @@ main .extra .book div p {
     background: #865297;
   }
   #case_study .formato .info .text {
-    width: 18rem;
-    margin-left: 12px;
+    width: 100%;
+    margin-left: 8px;
     align-self: center;
   }
   #case_study .formato .info .text h2 {
-    font-family: Advent Pro;
-    font-size: 2.5rem;
-    font-style: normal;
+    font-size: 2rem;
     font-weight: 600;
-    line-height: normal;
-    color: #512D5D;
   }
   #case_study .formato .info .text p {
-    font-family: Roboto;
-    font-size: 1.25rem;
-    font-style: normal;
+    font-size: 1rem;
     font-weight: 300;
-    line-height: normal;
   }
   #case_study .formato .info .text a {
-    color: #512D5D;
-    text-decoration: none;
-    font-family: Roboto;
-    font-size: 1.25rem;
-    font-style: normal;
+    font-size: 1.05rem;
     font-weight: 500;
-    line-height: normal;
   }
   #case_study .formato .portada {
     display: none;
-  }
-  #case_study .marketing {
-    gap: 14rem;
-    margin: 80px 0px;
-    padding: 80px 0px;
-  }
-  #case_study .marketing .info .text {
-    width: 18rem;
   }
   #case_study .dashboard .info .divider {
     background: #CCCCCC;
