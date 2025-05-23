@@ -3,7 +3,7 @@
 
 #footer{
     background-color:  color.$color-bg-blur;
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(2px);
     z-index: 10;
     display: flex;
     justify-content: space-between;
@@ -30,8 +30,12 @@
         justify-content: center;
         padding: 20px 80px;
         align-items: center;
+        width: 100vw;
+        overflow: hidden;
         box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.08);
         .rrss{
+            display: flex;
+            flex-direction: row;
             margin-top: 20px;
             a{
                 margin-left: 20px;

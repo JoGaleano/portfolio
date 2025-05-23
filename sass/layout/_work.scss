@@ -57,11 +57,25 @@
         width: 25rem;
         height: 25rem;
         border-radius: 12.5rem 0rem;
-        background-image: url("../../assets/profile.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        border: 0.5px solid color.$primary-p3;
+        video{
+            width: 55%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0px;
+            margin-top: 2%;
+            transform: translate(+40%, 0%);
+            transition: opacity 0.3s ease;
         }
+        .fallback-profile {
+            display: none;
+        }
+    }
     .text{
         width: 23rem;
         height: auto;
@@ -84,32 +98,9 @@
         position: absolute;
     }
 
-    #arrow1 {
-        top: -7vh; /* Ajustar según la posición deseada */
-        right: 20vw; /* Ajustar según la posición deseada */
-        .label{
-            width: 25rem;
-        }
-    }
-
-    #arrow2 {
-        bottom: 20vh; /* Ajustar según la posición deseada */
-        left: 8vw; /* Ajustar según la posición deseada */
-        .label{
-            width: 12rem;
-        }
-
-    }
-
-    #arrow3 {
-        bottom: -10vh; /* Ajustar según la posición deseada */
-        left: 30vw; /* Ajustar según la posición deseada */
-        .label{
-            width: 20rem;
-        }
-    }
-
 }
+
+
 
 #case_study{
     position: relative;
@@ -378,23 +369,6 @@
             position: absolute;
         }
     
-        #arrow1 {
-            top: -7vh; 
-            right: 30vw; 
-            .label{
-                width: 25rem;
-            }
-        }
-    
-        #arrow2 {
-            bottom: 15vh; 
-            left: 8vw; 
-            .label{
-                width: 12rem;
-            }
-    
-        }
-    
     }
 
    
@@ -444,7 +418,6 @@
 
     #nav{
         position: fixed;
-        width: 100vw ;
         background-color: rgba(243, 215, 252, 0.08) !important;
         box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
         backdrop-filter: blur(1px);
@@ -462,15 +435,27 @@
         height: 40rem;
         margin-top: 20vh;
         .profile_photo{
-            width: 25rem;
+            background-color: none;
+            width: 80vw;
             height: 25rem;
             border-radius: 12.5rem 0rem;
-            background-image: url("../../assets/profile.jpg");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            transition: background-image 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 0.5px solid color.$primary-p3;
+            video{
+                width: 25vw;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0px;
+                margin-top: 2%;
+                transform: translate(+90%, 0%);
+                transition: opacity 0.3s ease;
+            }
         }
+
         .text{
             width: 23rem;
             height: auto;
@@ -493,30 +478,6 @@
             position: absolute;
         }
     
-        #arrow1 {
-            top: -8vh; /* Ajustar según la posición deseada */
-            right: -5vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 25rem;
-            }
-        }
-    
-        #arrow2 {
-            bottom: 50vh; /* Ajustar según la posición deseada */
-            left: 10vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 12rem;
-            }
-    
-        }
-    
-        #arrow3 {
-            bottom: 30vh; /* Ajustar según la posición deseada */
-            left: 50vw; /* Ajustar según la posición deseada */
-            .label{
-                width: 16rem;
-            }
-        }
     
     }
     
@@ -638,7 +599,6 @@
 
     #nav{
         position: fixed;
-        width: 100vw ;
         background-color: rgba(243, 215, 252, 0.08) !important;
         box-shadow: 0px 4px 4px 0px rgba(81, 45, 93, 0.08);
         backdrop-filter: blur(1px);
@@ -660,20 +620,32 @@
         flex-direction: column;
         gap: var(--Spacing-xxl, 3rem);
         width: auto;
-        height: 40rem;
+        height: 45rem;
         margin-top: 20vh;
         .profile_photo{
-            width: 20rem;
-            height: 20rem;
+            background-color: none;
+            width: 80vw;
+            height: 25rem;
             border-radius: 12.5rem 0rem;
-            background-image: url("../../assets/profile.jpg");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            transition: background-image 0.3s ease-in-out;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 0.5px solid color.$primary-p3;
+            video{
+                display: none;
+            }
+            .fallback-profile {
+                display: block;
+                width: 45vw;
+                height: 100%;
+                object-fit: cover;
+                transform: translate(+45%, 0%);
+            }
         }
         .text{
-            width: 20rem;
+            width: 16rem;
             height: auto;
             padding-top: 40px;
 
@@ -685,7 +657,7 @@
             }
             p{
                 font-family: Roboto;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 font-style: normal;
                 font-weight: 300;
                 line-height: normal;
@@ -694,18 +666,6 @@
         }
         .arrow-box{
             position: absolute;
-        }
-    
-        #arrow1 {
-            display: none;
-        }
-    
-        #arrow2 {
-            display: none;
-        }
-    
-        #arrow3 {
-            display: none;
         }
     
     }
@@ -739,32 +699,20 @@
                 } 
     
                 .text{
-                    width: 18rem;
-                    margin-left: 12px;
+                    width: 100%;
+                    margin-left: 8px;
                     align-self: center;
                     h2{
-                        font-family: Advent Pro;
-                        font-size: 2.5rem;
-                        font-style: normal;
+                        font-size: 2rem;
                         font-weight: 600;
-                        line-height: normal;
-                        color:  color.$primary-p9;
                     }
                     p{
-                        font-family: Roboto;
-                        font-size: 1.25rem;
-                        font-style: normal;
+                        font-size: 1rem;
                         font-weight: 300;
-                        line-height: normal;
                     }
                     a{
-                        color: color.$primary-p9;
-                        text-decoration: none;
-                        font-family: Roboto;
-                        font-size: 1.25rem;
-                        font-style: normal;
+                        font-size: 1.05rem;
                         font-weight: 500;
-                        line-height: normal;
                     }
                 }
     
@@ -777,77 +725,67 @@
     
         }
         
-        .marketing{
-            gap: 14rem;
-            margin: 80px 0px;
-            padding: 80px 0px;
+
+        .dashboard{
             .info{
+                .divider{
+                    background:  color.$color-grayscale-grey-p3;
+                } 
+
                 .text{
-                    width: 18rem;
-                }
-        }
-    }
-
-    .dashboard{
-        .info{
-            .divider{
-                background:  color.$color-grayscale-grey-p3;
-            } 
-
-            .text{
-                h2{
-                    color:  color.$color-grayscale-grey-p4;
-                }
-                a{
-                    color: color.$color-grayscale-grey-p4;
-                    text-decoration: none;
-                    font-family: Roboto;
-                    font-size: 1.25rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    cursor: auto;
-                    &:hover{
-                        text-decoration: none;
+                    h2{
                         color:  color.$color-grayscale-grey-p4;
-                        font-family: 600;
+                    }
+                    a{
+                        color: color.$color-grayscale-grey-p4;
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        cursor: auto;
+                        &:hover{
+                            text-decoration: none;
+                            color:  color.$color-grayscale-grey-p4;
+                            font-family: 600;
+                        }
                     }
                 }
+
+            }
+        }
+
+        .directory{
+            .info{
+                .divider{
+                    background:  color.$color-grayscale-grey-p3;
+                } 
+
+                .text{
+                    h2{
+                        color:  color.$color-grayscale-grey-p4;
+                    }
+                    a{
+                        color: color.$color-grayscale-grey-p4;
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 1.25rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        cursor: auto;
+                        &:hover{
+                            text-decoration: none;
+                            color:  color.$color-grayscale-grey-p4;
+                            font-family: 600;
+                        }
+                    }
+                }
+
             }
 
         }
-    }
-
-    .directory{
-        .info{
-            .divider{
-                background:  color.$color-grayscale-grey-p3;
-            } 
-
-            .text{
-                h2{
-                    color:  color.$color-grayscale-grey-p4;
-                }
-                a{
-                    color: color.$color-grayscale-grey-p4;
-                    text-decoration: none;
-                    font-family: Roboto;
-                    font-size: 1.25rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    cursor: auto;
-                    &:hover{
-                        text-decoration: none;
-                        color:  color.$color-grayscale-grey-p4;
-                        font-family: 600;
-                    }
-                }
-            }
-
-        }
-
-    }
     }
     
     #worked{
