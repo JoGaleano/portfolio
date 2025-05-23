@@ -19,15 +19,6 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="style/style.css">
 </head>
-<script>
-  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-  if (isIOS || isMobile) {
-    document.querySelector('.video-profile').style.display = 'none';
-    document.querySelector('.fallback-profile').style.display = 'block';
-  }
-</script>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P2ZHWDZD"
@@ -64,8 +55,8 @@
                 <video class="video-profile" autoplay muted loop playsinline>
                     <source src="assets/profile.webm" type="video/webm">
                     Tu navegador no soporta video con transparencia.
-                    <img class="fallback-profile" src="assets/mariPNG/profile_00000.png" alt="image #D avatar">
                 </video>
+                 <img class="fallback-profile" src="assets/mariPNG/profile_00000.png" alt="image 3D avatar">
             </div>
             <div class="text">
                 <h1>Jo Galeano</h1>
